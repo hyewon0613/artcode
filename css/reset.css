@@ -2,7 +2,20 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
+:root {
+  --main-color: #ffcd34;
+  --sub-color: #332f2d;
+  --xl-font-size: 50px;
+  --lg-font-size: 42px;
+  --md-font-size: 38px;
+  --sm-font-size: 24px;
+  --xs-font-size: 18px;
+  --xl-line-height: 58px;
+  --lg-line-height: 50px;
+  --md-line-height: 46px;
+  --sm-line-height: 32px;
+  --xs-line-height: 26px;
+}
 html,
 body,
 div,

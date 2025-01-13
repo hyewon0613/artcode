@@ -63,7 +63,7 @@ h1 {
 #gnb > ul > li:hover > a {
   font-size: 16px;
   font-weight: 700;
-  color: #ffcd34;
+  color: var(--main-color);
 }
 
 .icons {
@@ -83,3 +83,135 @@ section {
   width: 100%;
   height: auto;
 }
+
+/*메인 전체 영역*/
+.main_visual {
+  padding: 100px 0;
+  width: 100%;
+  height: auto;
+}
+.main_wrap {
+  width: 1760px;
+  height: 820px;
+  margin: 0 auto;
+  display: flex;
+  gap: 33px;
+}
+/*메인 왼쪽 영역*/
+.main_left {
+  width: 1044px;
+  height: 820px;
+  background-color: #ffcd34;
+  background-image: url(/img/main/main-banner-background.png);
+  border-radius: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+  padding: 60px;
+  box-sizing: border-box;
+}
+/*왼쪽 이미지 영역*/
+.main_image {
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+}
+.main_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main_image:nth-child(1) {
+  top: 100px;
+  left: 90px;
+  z-index: 100;
+}
+.main_image:nth-child(2) {
+  width: 500px;
+  height: 500px;
+  top: 62px;
+  left: 250px;
+  transform-origin: center;
+  animation: record 15s linear 0s infinite;
+}
+@keyframes record {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.main_image:nth-child(3) {
+  width: fit-content;
+  height: fit-content;
+  top: 30px;
+  right: 300px;
+}
+.main_image
+/*왼쪽 텍스트 영역*/
+.main_text {
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+}
+
+.main_text > div {
+  width: 100%;
+  height: 46px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 46px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  font-size: var(--sm-font-size);
+  font-weight: 400;
+}
+.main_text > h2 {
+  font-size: var(--lg-font-size);
+  font-weight: 300;
+  text-align: right;
+  padding-bottom: 40px;
+  border-bottom: 2px solid #000;
+  margin-bottom: 40px;
+}
+.main_text > h2 > span {
+  font-weight: 600;
+}
+.main_text > p:nth-child(3) {
+  font-size: var(--sm-font-size);
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-align: right;
+}
+.main_text > p:nth-child(4) {
+  font-size: var(--sm-font-size);
+  font-weight: 300;
+  text-align: right;
+}
+/*메인 오른쪽 영역*/
+.main_right {
+  width: 683px;
+  height: 100%;
+}
+.graph-wrap {
+  display: flex;
+  gap: 50px;
+}
+.circle-graph {
+  position: relative;
+}
+.circle-graph > strong {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+}
+/* 메인 오른쪽-상단 */
+/* 메인 오른쪽-하단 */
