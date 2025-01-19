@@ -4,10 +4,10 @@ $(".circle-graph").each(function (index, node) {
   let fillColor = fillColors[index];
 
   $(this).circleProgress({
-    size: 150, // 그래프 크기
+    size: 300, // 그래프 크기
     value: perNum / 80, // 그래프에 표시될 값
     startAngle: 300, // 시작지점
-    thickness: 30, // 그래프 두께
+    thickness: 50, // 그래프 두께
     fill: {
       // 그래프 선 색
       color: fillColor,
