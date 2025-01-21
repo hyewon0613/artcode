@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARTCODE</title>
+
+    <link rel="stylesheet" href="./css/layout.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- 헤더-->
+      <header>
+        <!-- 헤더 -->
+        <div class="con">
+          <!-- 로고 -->
+          <h1>
+            <a href="/">
+              <img src="./img/icon/logo.svg" alt="logo" />
+            </a>
+          </h1>
+          <!-- 메뉴 -->
+          <nav id="gnb">
+            <ul>
+              <li>
+                <a href="#">아트코드 소개</a>
+              </li>
+              <li>
+                <a href="#">공연 | 전시</a>
+              </li>
+              <li>
+                <a href="#">이벤트 | 행사</a>
+              </li>
+              <li>
+                <a href="#">안심거래</a>
+              </li>
+              <li>
+                <a href="#">고객센터</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- 아이콘 -->
+          <div class="icons">
+            <div class="search">
+              <a href="#">
+                <img src="./img/icon/search.svg" alt="search" />
+              </a>
+            </div>
+            <div class="mypage">
+              <a href="#">
+                <img src="./img/icon/user.svg" alt="mypage" />
+              </a>
+            </div>
+            <div class="menu">
+              <a href="#">
+                <img src="./img/icon/all_menu.svg" alt="menu" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="main_visual">
+          <div class="main_wrap">
+            <!-- 메인 왼쪽 영역 -->
+            <div class="main_left">
+              <!-- 이미지 영역 -->
+              <div class="main_image">
+                <img src="./img/main/main.png" alt="main main visual" />
+              </div>
+              <div class="main_image">
+                <img src="./img/main/record.png" alt="record" />
+              </div>
+              <div class="main_image">
+                <img src="./img/main/record pin.png" alt="record pin" />
+              </div>
+              <!-- 텍스트 영역 -->
+              <div class="main_text">
+                <div>
+                  <p># 아트코드 주최 관람권</p>
+                </div>
+                <h2>
+                  락뮤지컬<br />
+                  <span>선천적 얼간이들</span>
+                </h2>
+                <p>2024.12.21 - 2025.01.05</p>
+                <p>장소 : 이화여자대학교 삼성홀</p>
+              </div>
+            </div>
+            <!-- 메인 오른쪽 영역 -->
+            <div class="main_right">
+              <div class="right_top">
+                <p>아트코트 안심거래 진행율</p>
+                <!-- 원형 그래프 영역 - java -->
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+                <div
+                  class="graph-wrap active-on-visible"
+                  data-active-on-visible-callback-func-name="CircleRun"
+                >
+                  <div class="circle-graph" circleProgress="60">
+                    <strong class="circle-percent"></strong>
+                  </div>
+                </div>
+                <script src="./js/graph.js"></script>
+                <h2>75,123,856회</h2>
+              </div>
+              <!-- 아래 컨텐츠 영역 -->
+              <div class="right_bottom">
+                <div>
+                  <img
+                    src="./img/icon/yellow security button.png"
+                    alt="yellow_safe_btn"
+                  />
+                </div>
+                <div class="safe_txt">
+                  <p>아트코트 안심 배지 제도</p>
+                  <p>모든 거래는 이중인증을 진행하고 있어요.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 첫번째 섹션 -->
+        <section class="main_sec1">
+          <div class="track_box">
+            <img src="./img/main/record.png" alt="record" />
+            <div class="hot_txt">
+              <p>01 HOT TRACK</p>
+              <p>지금 뜨는 추천 공연 TOP 7</p>
+            </div>
+          </div>
+          <div class="track_show">
+            <div class="left_img_box">
+              <a href="#">
+                <img src="./img/main/hot1.png" alt="hot1" />
+              </a>
+            </div>
+            <div class="right_img_box">
+              <div class="right_box_top">
+                <a href="#">
+                  <img src="./img/main/hot2.png" alt="hot2" />
+                </a>
+                <a href="#">
+                  <img src="./img/main/hot3.png" alt="hot3" />
+                </a>
+                <a href="#">
+                  <img src="./img/main/hot4.png" alt="hot4" />
+                </a>
+              </div>
+              <div class="right_box_bottom">
+                <a href="#">
+                  <img src="./img/main/hot5.png" alt="hot5" />
+                </a>
+                <a href="#">
+                  <img src="./img/main/hot6.png" alt="hot6" />
+                </a>
+                <a href="#">
+                  <img src="./img/main/hot7.png" alt="hot7" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="track_btn">
+            <a href="#"
+              >전체보기 <img src="./img/main/round_plus.svg" alt=""
+            /></a>
+          </div>
+        </section>
+        <!-- 두번째 섹션 -->
+        <section class="main_sec2">
+          <div class="sec2_con">
+            <!-- 텍스트 박스 영역_왼쪽 -->
+            <div class="text_wrap">
+              <!-- 타이틀 영역 -->
+              <div class="track_box">
+                <img src="./img/main/record.png" alt="record" />
+                <div class="hot_txt">
+                  <p>02 REVIEW TRACK</p>
+                  <p>아트코드 베스트 리뷰</p>
+                </div>
+              </div>
+              <!--  리뷰 아이디박스 -->
+              <div class="user_box">
+                <div>
+                  <img src="#" alt="" />
+                </div>
+                <p>skc07048**</p>
+              </div>
+              <h4>아트 코드에서 거래하고 가족끼리 공연보고 왔어요</h4>
+              <p>
+                작년부터 위키드 보고싶었는데 중고 티켓 가격은 계속<br />
+                올라가기만 하고 원하는 자리는 없고 ㅠㅠ<br />
+                우연히 아트코드를 알게되었는데, 안심 거래로 티켓을 구매해서
+              </p>
+              <!-- 섹션 2번 버튼 영역 -->
+              <div class="sec2_btn">
+                <a href="#"
+                  >리뷰 전체보기<img
+                    src="./img/main/mynaui_chat-plus.svg"
+                    alt="더보기"
+                /></a>
+              </div>
+            </div>
+            <!-- 이미지 박스 오른쪽 -->
+            <div class="img_wrap">
+              <!-- 이미지 1번 영역 -->
+              <div>
+                <img src="./img/main/review1.png" alt="리뷰1" />
+              </div>
+              <!-- 이미지 2번 영역 -->
+              <div>
+                <img src="./img/main/review2.png" alt="리뷰2" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 세번째 섹션 -->
+        <section class="main_sec3">
+          <div class="sec3_con">
+            <div class="track_box">
+              <img src="./img/main/record.png" alt="record" />
+              <div class="tosell_txt">
+                <p>03 TO SELL TRACK</p>
+                <p>지역별 티켓 거래</p>
+              </div>
+            </div>
+            <div class="content_wrap">
+              <div class="content_left">
+                <div class="region_box">
+                  <p>서울</p>
+                </div>
+                <div class="region_box">
+                  <p>경기</p>
+                </div>
+                <div class="region_box">
+                  <p>인천</p>
+                </div>
+                <div class="region_box">
+                  <p>제주</p>
+                </div>
+                <div class="region_box">
+                  <p>강원도</p>
+                </div>
+                <div class="region_box">
+                  <p>충청도</p>
+                </div>
+                <div class="region_box">
+                  <p>전라도</p>
+                </div>
+                <div class="region_box">
+                  <p>경상도</p>
+                </div>
+              </div>
+              <div class="content_right">
+                <div class="img_txt1">
+                  <div class="img_txt_left">
+                    <div class="content_img">
+                      <img src="./img/main/area1.png" alt="area1" />
+                    </div>
+                    <div class="content_txt">
+                      <div class="content_txt_box">
+                        <div>
+                          <h4>
+                            뮤지컬 <br />
+                            아이참 : 멋대로 사세요
+                          </h4>
+                        </div>
+                        <div>
+                          <p>
+                            1930년대 경성, 뛰어난 감각과 숨길 수<br />
+                            없는 끼 세상에 순응하기를 거부하고 자<br />
+                            신만의 색으로 세상을
+                          </p>
+                        </div>
+                        <div>
+                          <img src="#" alt="heart" />
+                          <p>2134</p>
+                        </div>
+                      </div>
+                      <div class="content_txt_graph">
+                        <div class="area_graph"></div>
+                        <div class="graph_txt">
+                          <p>실시간 예매율 : 78%</p>
+                          <p>잔여좌석 : 14</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="img_txt_right">
+                    <div class="content_img">
+                      <img src="./img/main/area2.png" alt="area2" />
+                    </div>
+                    <div class="content_txt">
+                      <div class="content_txt_box">
+                        <div>
+                          <h4>
+                            뮤지컬 <br />
+                            아이참 : 멋대로 사세요
+                          </h4>
+                        </div>
+                        <div>
+                          <p>
+                            1930년대 경성, 뛰어난 감각과 숨길 수<br />
+                            없는 끼 세상에 순응하기를 거부하고 자<br />
+                            신만의 색으로 세상을
+                          </p>
+                        </div>
+                        <div>
+                          <img src="#" alt="heart" />
+                          <p>2134</p>
+                        </div>
+                      </div>
+                      <div class="content_txt_graph">
+                        <div class="area_graph"></div>
+                        <div class="graph_txt">
+                          <p>실시간 예매율 : 78%</p>
+                          <p>잔여좌석 : 14</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="img_txt2">
+                  <div class="img_txt_left">
+                    <div class="content_img">
+                      <img src="./img/main/area1.png" alt="area1" />
+                    </div>
+                    <div class="content_txt">
+                      <div class="content_txt_box">
+                        <div>
+                          <h4>
+                            뮤지컬 <br />
+                            아이참 : 멋대로 사세요
+                          </h4>
+                        </div>
+                        <div>
+                          <p>
+                            1930년대 경성, 뛰어난 감각과 숨길 수<br />
+                            없는 끼 세상에 순응하기를 거부하고 자<br />
+                            신만의 색으로 세상을
+                          </p>
+                        </div>
+                        <div>
+                          <img src="#" alt="heart" />
+                          <p>2134</p>
+                        </div>
+                      </div>
+                      <div class="content_txt_graph">
+                        <div class="area_graph"></div>
+                        <div class="graph_txt">
+                          <p>실시간 예매율 : 78%</p>
+                          <p>잔여좌석 : 14</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="img_txt_right">
+                    <div class="content_img">
+                      <img src="./img/main/area2.png" alt="area2" />
+                    </div>
+                    <div class="content_txt">
+                      <div class="content_txt_box">
+                        <div>
+                          <h4>
+                            뮤지컬 <br />
+                            아이참 : 멋대로 사세요
+                          </h4>
+                        </div>
+                        <div>
+                          <p>
+                            1930년대 경성, 뛰어난 감각과 숨길 수<br />
+                            없는 끼 세상에 순응하기를 거부하고 자<br />
+                            신만의 색으로 세상을
+                          </p>
+                        </div>
+                        <div>
+                          <img src="#" alt="heart" />
+                          <p>2134</p>
+                        </div>
+                      </div>
+                      <div class="content_txt_graph">
+                        <div class="area_graph"></div>
+                        <div class="graph_txt">
+                          <p>실시간 예매율 : 78%</p>
+                          <p>잔여좌석 : 14</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="img_txt3">
+                  <div class="img_txt_left">
+                    <div class="content_img">
+                      <img src="./img/main/area1.png" alt="area1" />
+                    </div>
+                    <div class="content_txt">
+                      <div class="content_txt_box">
+                        <div>
+                          <h4>
+                            뮤지컬 <br />
+                            아이참 : 멋대로 사세요
+                          </h4>
+                        </div>
+                        <div>
+                          <p>
+                            1930년대 경성, 뛰어난 감각과 숨길 수<br />
+                            없는 끼 세상에 순응하기를 거부하고 자<br />
+                            신만의 색으로 세상을
+                          </p>
+                        </div>
+                        <div>
+                          <img src="#" alt="heart" />
+                          <p>2134</p>
+                        </div>
+                      </div>
+                      <div class="content_txt_graph">
+                        <div class="area_graph"></div>
+                        <div class="graph_txt">
+                          <p>실시간 예매율 : 78%</p>
+                          <p>잔여좌석 : 14</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="img_txt_right">
+                    <div class="content_img">
+                      <img src="./img/main/area2.png" alt="area2" />
+                    </div>
+                    <div class="content_txt">
+                      <div class="content_txt_box">
+                        <div>
+                          <h4>
+                            뮤지컬 <br />
+                            아이참 : 멋대로 사세요
+                          </h4>
+                        </div>
+                        <div>
+                          <p>
+                            1930년대 경성, 뛰어난 감각과 숨길 수 없는 끼 세상에
+                            순응하기를 거부하고 자신만의 색으로 세상을
+                          </p>
+                        </div>
+                        <div>
+                          <img src="#" alt="heart" />
+                          <p>2134</p>
+                        </div>
+                      </div>
+                      <div class="content_txt_graph">
+                        <div class="area_graph"></div>
+                        <div class="graph_txt">
+                          <p>실시간 예매율 : 78%</p>
+                          <p>잔여좌석 : 14</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sec3_btn">
+              <a href="#"
+                >전체 거래보기<img
+                  src="./img/main/mynaui_chat-plus.svg"
+                  alt="더보기"
+              /></a>
+            </div>
+          </div>
+        </section>
+        <!-- 네번째 섹션 -->
+        <section class="main_sec4">
+          <div class="track_box">
+            <img src="./img/main/record.png" alt="record" />
+            <div class="only_txt">
+              <p>04 ONLY TRACK</p>
+              <p>아트코드 ONLY</p>
+            </div>
+          </div>
+        </section>
+        <!-- 다섯번째 섹션 -->
+        <section class="main_sec5">
+          <div class="track_box">
+            <img src="./img/main/record.png" alt="record" />
+            <div class="service_txt">
+              <p>05 SERVICE TRACK</p>
+              <p>자주 찾는 서비스</p>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- 푸터 -->
+      <footer></footer>
+    </div>
+  </body>
+</html>

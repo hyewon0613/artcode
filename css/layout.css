@@ -38,35 +38,42 @@ h1 {
 #gnb {
   width: fit-content;
   height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 #gnb > ul {
   width: fit-content;
+  height: fit-content;
   display: flex;
-  line-height: 100px;
   gap: 60px;
+  align-items: center;
 }
 
 #gnb > ul > li {
-  width: fit-content;
-  height: fit-content;
+  width: 110px;
+  height: 100%;
 }
 
 #gnb > ul > li > a {
   width: 100%;
-  height: 100%;
-  font-size: 16px;
+  height: fit-content;
+  font-size: 17px;
   font-weight: 400;
   display: block;
   box-sizing: border-box;
   text-align: center;
   transition: 0.3s;
+  line-height: 50px;
+  border-bottom: 2px solid #fff;
 }
 
 #gnb > ul > li:hover > a {
-  font-size: 16px;
-  font-weight: 700;
-  color: var(--main-color);
+  font-size: 18px;
+  font-weight: 600;
+  /* color: var(--main-color); */
+  border-bottom: 2px solid var(--main-color);
+  line-height: 50px;
 }
 
 .icons {
@@ -360,41 +367,180 @@ section {
 
 /* 첫번째 섹션 - 전체보기 버튼 */
 .track_btn {
-  width: 236px;
-  height: 55px;
-  background-color: #999;
-  border-radius: 10px;
+  width: 1443px;
+  height: 100%;
   text-align: center;
   line-height: 55px;
-  margin-top: 68px;
-  margin-bottom: 300px;
   cursor: pointer;
+  margin: 68px auto;
+  margin-bottom: 300px;
 }
 
 .track_btn > a {
-  font-size: var(--sm-font-size);
-  font-weight: 400;
-  width: 100%;
-  height: 100%;
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  height: fit-content;
+  font-size: var(--xs-font-size);
   transition: 0.3s;
+  margin: 0;
+  background-color: #e4e4e4;
+  border-radius: 10px;
+  margin-left: auto;
+  font-weight: 500;
 }
 
 /* 첫번째 섹션 - 전체보기 버튼 / 마우스를 올리면 */
 
 .track_btn:hover a {
-  font-weight: 600;
+  width: 200px;
+  /* font-weight: 600; */
   background-color: #ffcd34;
   border-radius: 10px;
 }
 
 /* 두번째 섹션 - review track */
-/* 첫번째 섹션 - 제목 */
-.track_box {
+.main_sec2 {
+  width: 100%;
+  height: 1030px;
+  overflow: hidden;
+}
+
+.sec2_con {
+  width: 100%;
+  height: 730px;
+  background-color: #332f2d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.text_wrap {
+  width: fit-content;
+  height: fit-content;
+  margin-left: 232px;
+}
+
+.text_wrap > .track_box {
+  color: #fff;
+  margin-bottom: 80px;
+  margin-left: 0px;
+}
+
+.user_box {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  gap: 10px;
+  align-items: center;
+  color: #fff;
+  margin-left: 5px;
+}
+
+.user_box > div:nth-of-type(1) {
+  width: 48px;
+  height: 48px;
+  overflow: hidden;
+  background-color: #e4e4e4;
+  border-radius: 100%;
+}
+
+.text_wrap > h4 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 75px;
+  margin-left: 5px;
+}
+
+.text_wrap > p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #ffffffad;
+  line-height: 40px;
+  width: 450px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-left: 5px;
+}
+
+.sec2_btn {
+  width: fit-content;
+  height: fit-content;
+}
+
+.sec2_btn > a {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  padding: 13px 60px;
+  border-radius: 6px;
+  background-color: #fff;
+  font-weight: 400;
+  margin-top: 50px;
+  gap: 15px;
+  transition: 0.5s;
+}
+
+.sec2_btn:hover > a {
+  font-weight: 500;
+}
+
+.sec2_btn > a > img {
+  padding-top: 2.5px;
+}
+
+.img_wrap {
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  left: 850px;
+  top: 200px;
+  display: flex;
+  gap: 30px;
+  align-items: end;
+}
+
+.img_wrap > div:nth-of-type(1) {
+  width: 640px;
+  height: 640px;
+  overflow: hidden;
+  border-radius: 50px;
+}
+
+.img_wrap > div:nth-of-type(1) > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img_wrap > div:nth-of-type(2) {
+  width: 538px;
+  height: 538px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+/* 세번째 섹션 - to sell track */
+.main_sec3 {
+  width: 100%;
+  height: fit-content;
+}
+
+.sec3_con {
+  width: 1462px;
+  height: 1112px;
+}
+
+/* 세번째 섹션 - 제목 */
+.main_sec3 .track_box {
   width: fit-content;
   height: fit-content;
   display: flex;
+  margin: 0 232px;
   gap: 14px;
-  margin: 0 auto;
   margin-bottom: 120px;
 }
 .track_box img {
@@ -402,13 +548,87 @@ section {
   height: 70px;
 }
 
-.review_txt p:first-child {
+.tosell_txt p:first-child {
   font-size: var(--xs-font-size);
   font-weight: 500;
   margin-bottom: 8px;
 }
 
-.review_txt p:nth-child(2) {
+.tosell_txt p:nth-child(2) {
   font-size: var(--lg-font-size);
   font-weight: 700;
+}
+
+/* 세번째 섹션 - 내용 */
+.content_wrap {
+  width: fit-content;
+  height: 792px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+}
+
+/* 세번째 섹션 - 왼쪽 영역 (지역) */
+.content_left {
+  width: 120px;
+  height: 792px;
+}
+
+.region_box {
+  font-size: 26px;
+  font-weight: 400;
+  color: #7c7c7c;
+  line-height: 100px;
+  border-left: 2px solid #949494;
+  margin-left: 15px;
+}
+
+.region_box > p::before {
+  width: 20px;
+  height: 2px;
+  background-color: #949494;
+  display: inline-block;
+  content: "";
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+/* 세번째 섹션 - 오른쪽 영역 (이미지, 글, 그래프) */
+.content_right {
+  width: fit-content;
+  height: fit-content;
+}
+
+.img_txt1 {
+  display: flex;
+  justify-content: center;
+}
+
+.img_txt_left {
+  width: fit-content;
+  height: fit-content;
+  gap: 28px;
+  display: flex;
+}
+.img_txt_right {
+  width: fit-content;
+  height: fit-content;
+  gap: 28px;
+  display: flex;
+}
+
+.content_img {
+  width: 180px;
+  height: 260px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.content_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content_txt {
 }
