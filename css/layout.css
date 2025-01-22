@@ -366,7 +366,7 @@ section {
 }
 
 /* 첫번째 섹션 - 전체보기 버튼 */
-.track_btn {
+.sec1_btn {
   width: 1443px;
   height: 100%;
   text-align: center;
@@ -376,7 +376,7 @@ section {
   margin-bottom: 300px;
 }
 
-.track_btn > a {
+.sec1_btn > a {
   display: flex;
   justify-content: center;
   width: 200px;
@@ -389,10 +389,8 @@ section {
   margin-left: auto;
   font-weight: 500;
 }
-
 /* 첫번째 섹션 - 전체보기 버튼 / 마우스를 올리면 */
-
-.track_btn:hover a {
+.sec1_btn:hover a {
   width: 200px;
   /* font-weight: 600; */
   background-color: #ffcd34;
@@ -428,6 +426,7 @@ section {
   margin-left: 0px;
 }
 
+/* 두번째 섹션 - 유저프로필, 아이디 */
 .user_box {
   display: flex;
   width: fit-content;
@@ -446,6 +445,7 @@ section {
   border-radius: 100%;
 }
 
+/* 두번째섹션 - 리뷰글 */
 .text_wrap > h4 {
   font-size: 24px;
   font-weight: 600;
@@ -466,6 +466,7 @@ section {
   margin-left: 5px;
 }
 
+/* 두번째 섹션 - 버튼 */
 .sec2_btn {
   width: fit-content;
   height: fit-content;
@@ -492,6 +493,7 @@ section {
   padding-top: 2.5px;
 }
 
+/* 두번째 섹션- 리뷰이미지 */
 .img_wrap {
   width: fit-content;
   height: fit-content;
@@ -530,8 +532,9 @@ section {
 }
 
 .sec3_con {
-  width: 1462px;
-  height: 1112px;
+  width: fit-content;
+  height: fit-content;
+  margin: 0 232px;
 }
 
 /* 세번째 섹션 - 제목 */
@@ -539,7 +542,7 @@ section {
   width: fit-content;
   height: fit-content;
   display: flex;
-  margin: 0 232px;
+  margin-left: 0;
   gap: 14px;
   margin-bottom: 120px;
 }
@@ -565,7 +568,6 @@ section {
   height: 792px;
   margin: 0 auto;
   display: flex;
-  gap: 40px;
 }
 
 /* 세번째 섹션 - 왼쪽 영역 (지역) */
@@ -575,12 +577,13 @@ section {
 }
 
 .region_box {
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 400;
   color: #7c7c7c;
   line-height: 100px;
   border-left: 2px solid #949494;
   margin-left: 15px;
+  cursor: pointer;
 }
 
 .region_box > p::before {
@@ -593,15 +596,41 @@ section {
   margin-bottom: 8px;
 }
 
+.region_box p {
+  transition: 0.5s;
+}
+
+/* 지역키워드에 마우스를 올리면 */
+.region_box:hover p {
+  color: #ffcd34;
+  font-size: 28px;
+  font-weight: 600;
+}
+
 /* 세번째 섹션 - 오른쪽 영역 (이미지, 글, 그래프) */
 .content_right {
-  width: fit-content;
+  width: 1310px;
   height: fit-content;
 }
 
 .img_txt1 {
   display: flex;
   justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.img_txt2 {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.img_txt3 {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
 }
 
 .img_txt_left {
@@ -610,6 +639,7 @@ section {
   gap: 28px;
   display: flex;
 }
+
 .img_txt_right {
   width: fit-content;
   height: fit-content;
@@ -617,18 +647,195 @@ section {
   display: flex;
 }
 
+/* 공연 이미지박스 */
 .content_img {
   width: 180px;
-  height: 260px;
+  height: 240px;
   overflow: hidden;
   border-radius: 20px;
 }
 
+/* 공연 이미지 */
 .content_img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
+/* 글, 그래프 */
 .content_txt {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* 공연이름, 요약글 */
+.content_txt_box h4 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.content_txt_box p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+/* 좋아요 수 */
+.content_txt_box > div:nth-child(3) {
+  display: flex;
+  gap: 5px;
+}
+
+/* 그래프 설명 */
+.graph_txt {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+}
+
+.sec3_btn {
+  width: fit-content;
+  height: fit-content;
+  margin-left: auto;
+}
+
+.sec3_btn > a {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  padding: 13px 60px;
+  border-radius: 6px;
+  background-color: #fff;
+  border: 1px solid #efefef;
+  font-weight: 400;
+  margin-top: 70px;
+  gap: 15px;
+  transition: 0.5s;
+}
+
+.sec3_btn:hover > a {
+  font-weight: 500;
+}
+
+.sec3_btn > a > img {
+  padding-top: 2.5px;
+}
+
+/* 네번째 섹션- only track */
+.main_sec4 {
+  width: fit-content;
+  height: fit-content;
+  overflow: hidden;
+}
+.sec4_con {
+  width: 100%;
+  height: 300px;
+  background-color: #332f2d;
+  display: flex;
+  align-items: center;
+  margin-top: 300px;
+  margin-bottom: 300px;
+}
+
+/* 네번째 섹션 - 제목 */
+.sec4_con .track_box {
+  width: 500px;
+  height: fit-content;
+  display: flex;
+  margin-left: 232px;
+  gap: 14px;
+  margin-top: 120px;
+}
+.sec4_con .track_box img {
+  width: 70px;
+  height: 70px;
+}
+
+.only_txt p:first-child {
+  font-size: var(--xs-font-size);
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.only_txt p:nth-child(2) {
+  font-size: var(--lg-font-size);
+  font-weight: 700;
+  color: #fff;
+}
+
+/* 네번째 섹션 - 공연 이미지박스 */
+.sec4_img_wrap {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  gap: 30px;
+  margin-bottom: 150px;
+}
+
+.sec4_img_wrap > div {
+  width: 230px;
+  height: 330px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.sec4_img_wrap > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 다섯번째 섹션 - service track */
+.main_sec5 {
+  width: fit-content;
+  height: fit-content;
+}
+
+.sec5_con {
+  width: 1462px;
+  height: 525px;
+}
+
+.sec5_top {
+  width: 100%;
+  height: 94px;
+  display: flex;
+}
+
+.sec4_con .track_box {
+  width: 500px;
+  height: fit-content;
+  display: flex;
+  margin-left: 232px;
+  gap: 14px;
+  margin-top: 120px;
+}
+.sec5_con .track_box img {
+  width: 70px;
+  height: 70px;
+}
+
+.service_txt p:first-child {
+  font-size: var(--xs-font-size);
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.service_txt p:nth-child(2) {
+  font-size: var(--lg-font-size);
+  font-weight: 700;
+}
+
+.sec5_icon_wrap {
+  display: flex;
+  gap: 160px;
+}
+
+.icon_box1 {
 }
