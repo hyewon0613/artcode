@@ -285,7 +285,7 @@ section {
 }
 
 /* 첫번째 섹션 - 제목 */
-.track_box {
+.main_sec1 .track_box {
   width: fit-content;
   height: fit-content;
   display: flex;
@@ -293,7 +293,7 @@ section {
   margin: 0 auto;
   margin-bottom: 120px;
 }
-.track_box img {
+.main_sec1 .track_box img {
   width: 70px;
   height: 70px;
 }
@@ -729,7 +729,7 @@ section {
 
 /* 네번째 섹션- only track */
 .main_sec4 {
-  width: fit-content;
+  width: 100%;
   height: fit-content;
   overflow: hidden;
 }
@@ -793,29 +793,33 @@ section {
 
 /* 다섯번째 섹션 - service track */
 .main_sec5 {
-  width: fit-content;
+  width: 100%;
   height: fit-content;
+  margin-bottom: 200px;
 }
 
 .sec5_con {
   width: 1462px;
   height: 525px;
+  margin: 0 auto;
 }
 
+/* 제목 + 아이콘 4개  위 박스 */
 .sec5_top {
   width: 100%;
   height: 94px;
   display: flex;
+  justify-content: space-between;
 }
 
-.sec4_con .track_box {
+/* 다섯번째 섹션 제목 */
+.sec5_con .track_box {
   width: 500px;
   height: fit-content;
   display: flex;
-  margin-left: 232px;
   gap: 14px;
-  margin-top: 120px;
 }
+
 .sec5_con .track_box img {
   width: 70px;
   height: 70px;
@@ -832,10 +836,198 @@ section {
   font-weight: 700;
 }
 
+/* 다섯번째 섹션 - 아이콘 + 이름 박스 */
 .sec5_icon_wrap {
   display: flex;
   gap: 160px;
 }
 
-.icon_box1 {
+.icon_box div img {
+  margin-bottom: 16px;
+  padding-left: 3px;
+}
+
+.icon_box p {
+  font-weight: 300;
+  color: #000;
+  transition: 0.2s;
+}
+
+/* 아이콘에 마우스를 올리면 */
+.icon_box:hover p {
+  color: #ffcd34;
+  font-weight: 600;
+}
+
+/* 아래 2개 박스*/
+.sec5_bottom {
+  width: 1462px;
+  height: fit-content;
+  display: flex;
+  gap: 30px;
+  margin-top: 70px;
+}
+
+/* 왼쪽 박스 */
+.sec5_bottom_left {
+  width: 716px;
+  height: 358px;
+  background-color: #fbfbfb;
+  border: 1px solid #e9e9e9;
+  border-radius: 20px;
+}
+
+/*artcode의 ai 제목박스 */
+.ai_title_box {
+  width: 605px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  border-bottom: 0.5px solid #000;
+}
+
+/* artcode의 ai 글자  */
+.ai_title_box p {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+/* 더보기 아이콘 */
+.ai_title_box img {
+  width: 35px;
+  height: 35px;
+}
+
+/* artcode의 ai 컨텐츠 박스*/
+.ai_content_box {
+  width: 605px;
+  height: 184px;
+  margin: 0 auto;
+  margin: 40px 54px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* 글 박스 */
+.ai_content {
+  padding-top: 20px;
+}
+
+/* ai설명 */
+.ai_content p {
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 25px;
+}
+
+.ai_content p:first-child {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.ai_content p:nth-child(3) {
+  font-size: 14px;
+  line-height: 80px;
+}
+
+/* 오른쪽 박스 */
+.sec5_bottom_right {
+  width: 716px;
+  height: 358px;
+  background-color: #fbfbfb;
+  border: 1px solid #e9e9e9;
+  border-radius: 20px;
+}
+
+/* qna 제목박스 */
+.qna_title_box {
+  width: 605px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  border-bottom: 0.5px solid #000;
+}
+
+/* 자주하는 질문 글자  */
+.qna_title_box p {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+/* 더보기 아이콘 */
+.qna_title_box img {
+  width: 35px;
+  height: 35px;
+}
+
+/* 질문 3개 박스 */
+.qna_content_box {
+  width: 605px;
+  height: 184px;
+  margin: 0 auto;
+  margin: 40px 54px;
+  justify-content: space-around;
+}
+
+/* 질문 3개 글자 */
+.qna_content_box p {
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 60px;
+}
+
+/* 푸터 */
+footer {
+  width: fit-content;
+  height: fit-content;
+}
+
+.foot_con {
+  width: fit-content;
+  height: 80px;
+  border-top: 1px solid #e9e9e9;
+  padding-top: 30px;
+}
+
+.foot_con h3 {
+  width: 80px;
+  height: 14px;
+  object-fit: cover;
+}
+
+.foot_content_box {
+  width: 1240px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.foot_right_top {
+  display: flex;
+  gap: 60px;
+  margin-bottom: 20px;
+}
+
+.foot_right_top p {
+  font-size: 12px;
+  font-weight: 300;
+  color: #7c7c7c;
+}
+
+.foot_right_bottom {
+  display: flex;
+  gap: 40px;
+}
+
+.foot_right_bottom p {
+  font-size: 12px;
+  font-weight: 300;
+  color: #7c7c7c;
 }
