@@ -534,7 +534,7 @@ section {
 .sec3_con {
   width: fit-content;
   height: fit-content;
-  margin: 0 232px;
+  margin: 0 auto;
 }
 
 /* 세번째 섹션 - 제목 */
@@ -574,6 +574,7 @@ section {
 .content_left {
   width: 120px;
   height: 792px;
+  margin-right: 60px;
 }
 
 .region_box {
@@ -616,21 +617,21 @@ section {
 .img_txt1 {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 60px;
   margin-bottom: 40px;
 }
 
 .img_txt2 {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 60px;
   margin-bottom: 40px;
 }
 
 .img_txt3 {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 60px;
 }
 
 .img_txt_left {
@@ -691,6 +692,9 @@ section {
   gap: 5px;
 }
 
+.content_txt_graph .area_graph {
+  margin-bottom: 40px;
+}
 /* 그래프 설명 */
 .graph_txt {
   font-size: 16px;
@@ -750,7 +754,6 @@ section {
   display: flex;
   margin-left: 232px;
   gap: 14px;
-  margin-top: 120px;
 }
 .sec4_con .track_box img {
   width: 70px;

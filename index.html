@@ -91,7 +91,7 @@
             <div class="main_right">
               <div class="right_top">
                 <p>아트코트 안심거래 진행율</p>
-                <!-- 원형 그래프 영역 - java -->
+                <!-- 원형 그래프 영역 - js -->
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
                 <div
@@ -102,7 +102,7 @@
                     <strong class="circle-percent"></strong>
                   </div>
                 </div>
-                <script src="./js/graph.js"></script>
+                <script src="./js/main_graph.js"></script>
                 <h2>75,123,856회</h2>
               </div>
               <!-- 아래 컨텐츠 영역 -->
@@ -281,7 +281,19 @@
                         </div>
                       </div>
                       <div class="content_txt_graph">
-                        <div class="area_graph"></div>
+                        <div class="area_graph">
+                          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+                          <div
+                            class="graph-wrap active-on-visible"
+                            data-active-on-visible-callback-func-name="CircleRun"
+                          >
+                            <div class="circle-graph-sec3" circleProgress="60">
+                              <strong class="circle-percent"></strong>
+                            </div>
+                          </div>
+                          <script src="./js/sec3_graph.js"></script>
+                        </div>
                         <div class="graph_txt">
                           <p>실시간 예매율 : 78%</p>
                           <p>잔여좌석 : 14</p>
