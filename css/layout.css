@@ -424,6 +424,8 @@ section {
   color: #fff;
   margin-bottom: 80px;
   margin-left: 0px;
+  display: flex;
+  gap: 14px;
 }
 
 /* 두번째 섹션 - 유저프로필, 아이디 */
