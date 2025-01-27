@@ -94,3 +94,401 @@ section {
   width: 100%;
   height: auto;
 }
+
+/* 첫번째 섹션 - 베스트 랭킹 */
+.sub2_sec1 {
+  padding: 200px 0;
+  width: 100%;
+  height: fit-content;
+}
+
+.sub2_sec1_con {
+  width: 100%;
+  height: 100%;
+}
+
+/* 베스트랭킹 - 제목, 메뉴 */
+.sub2_sec1_top {
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+/* 베스트랭킹 - 제목 */
+.sub2_sec1_top h2 {
+  font-size: 45px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* 베스트랭킹 메뉴 */
+#sub2_sec1_all_menu {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #f3f3f3;
+  border-radius: 20px;
+  padding: 0 20px;
+}
+
+#sub2_sec1_all_menu > ul {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+#sub2_sec1_all_menu > ul > li {
+  width: 110px;
+  height: 100%;
+}
+
+#sub2_sec1_all_menu > ul > li > a {
+  width: 100%;
+  height: fit-content;
+  font-size: 20px;
+  font-weight: 300;
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  transition: 0.5s;
+  line-height: 50px;
+  border-bottom: 2px solid #fff;
+}
+
+#sub2_sec1_all_menu > ul > li:hover > a {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 50px;
+}
+
+/* 베스트랭킹 - 이미지영역 */
+.sub2_sec1_bottom {
+  width: 100%;
+  height: 820px;
+  display: flex;
+  overflow: hidden;
+  gap: 30px;
+  justify-content: center;
+}
+
+.sec1_card {
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+}
+
+.sec1_card > div:first-child {
+  width: 450px;
+  height: 600px;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.sec1_card > div:first-child > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sec1_card .sec1_card_content {
+  text-align: center;
+}
+.sec1_card .sec1_card_content > p:nth-child(1) {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 45px;
+}
+.sec1_card .sec1_card_content > p:nth-child(2) {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+/* 두번째 섹션 */
+.sub2_sec2 {
+  padding: 100px 0;
+  width: 100%;
+  height: fit-content;
+  background-color: #332f2d;
+}
+
+.sub2_sec2_con {
+  width: 100%;
+  height: fit-content;
+}
+
+/* only아트코드  - 제목, 메뉴 */
+.sub2_sec2_top {
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+/* only아트코드  - 제목 */
+.sub2_sec2_top h2 {
+  font-size: 45px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+/* only아트코드 - 메뉴 */
+#sub2_sec2_all_menu {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #4b4644;
+  border-radius: 20px;
+  padding: 0 20px;
+}
+
+#sub2_sec2_all_menu > ul {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+#sub2_sec2_all_menu > ul > li {
+  width: 110px;
+  height: 100%;
+}
+
+#sub2_sec2_all_menu > ul > li > a {
+  width: 100%;
+  height: fit-content;
+  font-size: 20px;
+  font-weight: 300;
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  transition: 0.5s;
+  line-height: 50px;
+  color: #fff;
+}
+
+#sub2_sec2_all_menu > ul > li:hover > a {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 50px;
+}
+
+/* only아트코드 이미지영역 */
+.sub2_sec2_bottom {
+  width: 100%;
+  height: 630px;
+  display: flex;
+  overflow: hidden;
+  gap: 30px;
+  justify-content: center;
+}
+
+.sec2_card {
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+}
+
+.sec2_card > div:first-child {
+  width: 350px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.sec2_card > div:first-child > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sec2_card .sec2_card_content {
+  text-align: center;
+}
+.sec2_card .sec2_card_content > p:nth-child(1) {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 45px;
+  color: #fff;
+}
+.sec2_card .sec2_card_content > p:nth-child(2) {
+  font-size: 24px;
+  font-weight: 300;
+  color: #fff;
+}
+
+/* 세번째 섹션 */
+.sub2_sec3 {
+  padding: 200px 0;
+  width: 100%;
+  height: fit-content;
+}
+
+.sub2_sec3_con {
+  width: 100%;
+  height: 100%;
+}
+
+/* 티켓 전체보기 - 위 */
+.sub2_sec3_top {
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+/* 티켓 전체보기 - 제목 */
+.sub2_sec3_top h2 {
+  font-size: 45px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* 티켓 전체보기 메뉴 */
+#sub2_sec3_all_menu {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #f3f3f3;
+  border-radius: 20px;
+  padding: 0 20px;
+}
+
+#sub2_sec3_all_menu > ul {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+#sub2_sec3_all_menu > ul > li {
+  width: 110px;
+  height: 100%;
+}
+
+#sub2_sec3_all_menu > ul > li > a {
+  width: 100%;
+  height: fit-content;
+  font-size: 20px;
+  font-weight: 300;
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  transition: 0.5s;
+  line-height: 50px;
+  border-bottom: 2px solid #fff;
+}
+
+#sub2_sec3_all_menu > ul > li:hover > a {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 50px;
+}
+
+/* 세번째 섹션 - 이미지영역 */
+.sub2_sec3_bottom {
+  padding: 0 160px;
+  width: fit-content;
+  height: 1800px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec3_card {
+  width: fit-content;
+  height: fit-content;
+}
+
+.sec3_card > div:first-child {
+  width: 280px;
+  height: 380px;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.sec3_card > div:first-child > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sec3_card .sec3_card_content {
+  text-align: center;
+}
+.sec3_card .sec3_card_content > p:nth-child(1) {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 45px;
+}
+.sec3_card .sec3_card_content > p:nth-child(2) {
+  font-size: 18px;
+  font-weight: 200;
+}
+
+/* 푸터 */
+footer {
+  width: fit-content;
+  height: fit-content;
+}
+
+.foot_con {
+  width: fit-content;
+  height: 80px;
+  border-top: 1px solid #e9e9e9;
+  padding-top: 30px;
+}
+
+.foot_con h3 {
+  width: 80px;
+  height: 14px;
+  object-fit: cover;
+}
+
+.foot_content_box {
+  width: 1240px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.foot_right_top {
+  display: flex;
+  gap: 60px;
+  margin-bottom: 20px;
+}
+
+.foot_right_top p {
+  font-size: 12px;
+  font-weight: 300;
+  color: #7c7c7c;
+}
+
+.foot_right_bottom {
+  display: flex;
+  gap: 40px;
+}
+
+.foot_right_bottom p {
+  font-size: 12px;
+  font-weight: 300;
+  color: #7c7c7c;
+}
