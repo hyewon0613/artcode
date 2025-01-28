@@ -96,3 +96,324 @@ section {
 }
 
 /* 첫번째 섹션 */
+.sub3_sec1 {
+  padding: 200px 0;
+  width: 100%;
+  height: fit-content;
+}
+
+.sub3_sec1_con {
+  width: 100%;
+  height: 100%;
+}
+
+/* 24th 타임세일 - 제목, 메뉴 */
+.sub3_sec1_top {
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+/* 24th 타임세일 - 제목 */
+.sub3_sec1_top h2 {
+  font-size: 45px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* 24th 타임세일 메뉴 */
+#sub3_sec1_all_menu {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #f3f3f3;
+  border-radius: 20px;
+  padding: 0 20px;
+}
+
+#sub3_sec1_all_menu > ul {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+#sub3_sec1_all_menu > ul > li {
+  width: 110px;
+  height: 100%;
+}
+
+#sub3_sec1_all_menu > ul > li > a {
+  width: 100%;
+  height: fit-content;
+  font-size: 20px;
+  font-weight: 300;
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  transition: 0.5s;
+  line-height: 50px;
+  border-bottom: 2px solid #fff;
+}
+
+#sub3_sec1_all_menu > ul > li:hover > a {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 50px;
+}
+
+/* 24th 타임세일 - 이미지영역 */
+.sub3_sec1_bottom {
+  width: 100%;
+  height: 820px;
+  display: flex;
+  overflow: hidden;
+  gap: 30px;
+  justify-content: center;
+}
+
+.sub3_sec1_bottom > .sec1_card {
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+}
+
+.sub3_sec1_bottom > .sec1_card > div:first-child {
+  width: 450px;
+  height: 600px;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.sub3_sec1_bottom > .sec1_card > div:first-child > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sub3_sec1_bottom .sec1_card_content {
+  text-align: center;
+}
+.sub3_sec1_bottom .sec1_card_content > p:nth-child(1) {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 45px;
+}
+.sub3_sec1_bottom .sec1_card_content > p:nth-child(2) {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+/* 두번째 섹션 */
+.sub3_sec2 {
+  padding: 100px 0;
+  width: 100%;
+  height: fit-content;
+  background-color: #332f2d;
+}
+
+.sub3_sec2_con {
+  width: 100%;
+  height: 750px;
+}
+
+/* best리뷰이벤트 - 위 / 제목, 메뉴 */
+.sub3_sec2_top {
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+/* best리뷰이벤트 - 제목 */
+.sub3_sec2_top h2 {
+  font-size: 45px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #fff;
+}
+
+/* best리뷰이벤트 - 베스트리뷰 아이디 */
+.sub3_sec2_id {
+  display: flex;
+  gap: 50px;
+  background-color: #4b4644;
+  padding: 18px 30px;
+  border-radius: 30px;
+}
+
+.sub3_sec2_id p:nth-child(1) {
+  color: #ffcd34;
+}
+
+.sub3_sec2_id p:nth-child(2) {
+  color: #fff;
+}
+
+/* best리뷰이벤트 - 아래 */
+.sub3_sec2_bottom {
+  width: fit-content;
+  height: 630px;
+  margin: 0 auto;
+}
+
+/* best리뷰이벤트 - 공연 이름 박스 */
+.sub3_sec2_name {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  margin-bottom: 20px;
+}
+
+/* best리뷰이벤트 - 공연 이름 4개*/
+.sub3_sec2_name p:nth-child(1) {
+  background-color: #544b48;
+  width: 280px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 30px;
+  color: #fff;
+}
+.sub3_sec2_name p:nth-child(2) {
+  background-color: #544b48;
+  width: 280px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 30px;
+  color: #fff;
+}
+.sub3_sec2_name p:nth-child(3) {
+  background-color: #544b48;
+  width: 280px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 30px;
+  color: #fff;
+}
+.sub3_sec2_name p:nth-child(4) {
+  background-color: #544b48;
+  width: 280px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 30px;
+  color: #fff;
+}
+
+/* best리뷰이벤트 - 이미지영역 */
+.sub3_sec2_review {
+  display: flex;
+  gap: 65px;
+  margin-bottom: 20px;
+}
+
+/* 리뷰 박스 4개 */
+.sub3_sec2_review1 {
+  width: 366px;
+  height: 500px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.sub3_sec2_review2 {
+  width: 366px;
+  height: 500px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.sub3_sec2_review3 {
+  width: 366px;
+  height: 500px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.sub3_sec2_review4 {
+  width: 366px;
+  height: 500px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+/* 리뷰박스 공통 이미지영역 */
+
+.sub3_sec2_review_img {
+  width: 366px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+}
+
+.sub3_sec2_review_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 리뷰박스 공통 텍스트영역 */
+.sub3_sec2_review_text {
+  height: 250px;
+  padding: 20px;
+}
+.sec2_review_text_top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.sec2_review_text_top p:nth-child(1) {
+  background-color: #ffcd34;
+  padding: 5px 20px;
+  font-weight: 500;
+  font-size: 12px;
+  border-radius: 20px;
+}
+
+.sec2_review_text_top p:nth-child(2) {
+  font-weight: 500;
+  font-size: 16px;
+  color: #332f2d;
+}
+
+.sec2_review_text_middle {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 22px;
+}
+.sec2_review_text_middle > div {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background-color: #949494;
+  overflow: hidden;
+}
+
+.sec2_review_text_middle p {
+  color: #949494;
+  font-size: 14px;
+}
+
+.sub3_sec2_review_text > p {
+  color: #646464;
+  font-size: 14px;
+  line-height: 30px;
+  width: 320px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* 세번째 섹션 */
+.sub3_sec3 {
+  width: 100%;
+  height: fit-content;
+}
