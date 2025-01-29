@@ -417,3 +417,153 @@ section {
   width: 100%;
   height: fit-content;
 }
+
+.sub3_sec3_con {
+  width: 1600px;
+  margin: 0 auto;
+  height: fit-content;
+}
+
+.sub3_sec3_con h2 {
+  font-size: 45px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.sub3_sec3_con > p {
+  margin-top: 60px;
+  text-align: end;
+  font-size: 20px;
+}
+
+.sub3_sec3_wrap {
+  margin-top: 60px;
+  width: fit-content;
+  height: fit-content;
+  margin-bottom: 200px;
+}
+
+.sub3_sec3_wrap_top {
+  display: flex;
+  gap: 100px;
+}
+
+.student_event div img {
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+.student_event p:nth-of-type(1) {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 32px;
+}
+.student_event p:nth-of-type(2) {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 40px;
+}
+
+.review_event div img {
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.review_event p:nth-of-type(1) {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 32px;
+}
+.review_event p:nth-of-type(2) {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 40px;
+}
+
+.sub3_sec3_wrap_bottom {
+  display: flex;
+  gap: 100px;
+  margin-top: 100px;
+}
+
+.check_event div img {
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.check_event p:nth-of-type(1) {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 32px;
+}
+.check_event p:nth-of-type(2) {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 40px;
+}
+
+.birth_event div img {
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.birth_event p:nth-of-type(1) {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 32px;
+}
+.birth_event p:nth-of-type(2) {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 40px;
+}
+
+/* 푸터 */
+footer {
+  width: fit-content;
+  height: fit-content;
+}
+
+.foot_con {
+  width: fit-content;
+  height: 80px;
+  border-top: 1px solid #e9e9e9;
+  padding-top: 30px;
+}
+
+.foot_con h3 {
+  width: 80px;
+  height: 14px;
+  object-fit: cover;
+}
+
+.foot_content_box {
+  width: 1240px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.foot_right_top {
+  display: flex;
+  gap: 60px;
+  margin-bottom: 20px;
+}
+
+.foot_right_top p {
+  font-size: 12px;
+  font-weight: 300;
+  color: #7c7c7c;
+}
+
+.foot_right_bottom {
+  display: flex;
+  gap: 40px;
+}
+
+.foot_right_bottom p {
+  font-size: 12px;
+  font-weight: 300;
+  color: #7c7c7c;
+}
