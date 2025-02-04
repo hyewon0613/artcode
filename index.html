@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ARTCODE</title>
-
     <link rel="stylesheet" href="./css/layout.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -92,8 +93,7 @@
               <div class="right_top">
                 <p>아트코트 안심거래 진행율</p>
                 <!-- 원형 그래프 영역 - js -->
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+
                 <div
                   class="graph-wrap active-on-visible"
                   data-active-on-visible-callback-func-name="CircleRun"
@@ -132,6 +132,7 @@
           </div>
           <div class="track_show">
             <div class="left_img_box">
+              <p></p>
               <a href="#">
                 <img src="./img/main/hot1.png" alt="hot1" />
               </a>
