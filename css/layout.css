@@ -363,38 +363,38 @@ section {
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
+  transition: 0.4s;
 }
 
 /* 첫번째 섹션 - 전체보기 버튼 */
 .sec1_btn {
-  width: 1443px;
-  height: 100%;
-  text-align: center;
-  line-height: 55px;
-  cursor: pointer;
-  margin: 68px auto;
-  margin-bottom: 300px;
+  width: fit-content;
+  height: fit-content;
+  margin-left: 1420px;
+  margin-bottom: 120px;
 }
 
 .sec1_btn > a {
   display: flex;
-  justify-content: center;
-  width: 200px;
-  height: fit-content;
-  font-size: var(--xs-font-size);
-  transition: 0.3s;
-  margin: 0;
-  background-color: #e4e4e4;
-  border-radius: 10px;
-  margin-left: auto;
+  align-items: center;
+  font-size: 18px;
+  padding: 13px 60px;
+  border-radius: 6px;
+  background-color: #fff;
+  border: 1px solid #efefef;
+  font-weight: 400;
+  margin-top: 70px;
+  gap: 15px;
+  transition: 0.5s;
+}
+
+/* 첫번째 섹션 - 전체보기 버튼 / 마우스를 올리면 */
+.sec1_btn:hover > a {
   font-weight: 500;
 }
-/* 첫번째 섹션 - 전체보기 버튼 / 마우스를 올리면 */
-.sec1_btn:hover a {
-  width: 200px;
-  /* font-weight: 600; */
-  background-color: #ffcd34;
-  border-radius: 10px;
+
+.sec1_btn > a > img {
+  padding-top: 2.5px;
 }
 
 /* 두번째 섹션 - review track */
@@ -574,29 +574,32 @@ section {
 
 /* 세번째 섹션 - 왼쪽 영역 (지역) */
 .content_left {
-  width: 120px;
+  width: 160px;
   height: 792px;
   margin-right: 60px;
 }
 
 .region_box {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   color: #7c7c7c;
   line-height: 100px;
   border-left: 2px solid #949494;
-  margin-left: 15px;
+  padding-left: 15px;
   cursor: pointer;
+  transition: 0.5s;
 }
 
-.region_box > p::before {
+.region_box:hover > p::before {
   width: 20px;
   height: 2px;
   background-color: #949494;
   display: inline-block;
   content: "";
+  margin-left: 0;
   margin-right: 8px;
   margin-bottom: 8px;
+  transition: 0.5s;
 }
 
 .region_box p {
@@ -606,7 +609,7 @@ section {
 /* 지역키워드에 마우스를 올리면 */
 .region_box:hover p {
   color: #ffcd34;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 600;
 }
 
@@ -618,21 +621,18 @@ section {
 
 .img_txt1 {
   display: flex;
-  justify-content: center;
   gap: 60px;
   margin-bottom: 40px;
 }
 
 .img_txt2 {
   display: flex;
-  justify-content: center;
   gap: 60px;
   margin-bottom: 40px;
 }
 
 .img_txt3 {
   display: flex;
-  justify-content: center;
   gap: 60px;
 }
 
@@ -676,7 +676,7 @@ section {
 .content_txt_box h4 {
   font-size: 20px;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 26px;
   margin-bottom: 15px;
   margin-top: 10px;
 }
@@ -686,12 +686,21 @@ section {
   font-weight: 300;
   line-height: 20px;
   margin-bottom: 20px;
+  width: 228px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 /* 좋아요 수 */
 .content_txt_box > div:nth-child(3) {
   display: flex;
   gap: 5px;
+}
+
+.content_txt_box > div:nth-child(3) img {
+  width: 20px;
+  height: 20px;
 }
 
 .content_txt_graph .area_graph {

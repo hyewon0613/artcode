@@ -225,6 +225,7 @@ section {
 .customer_wrap1_box1_left {
   width: 300px;
 }
+
 /* 고객센터 첫번째 섹션 왼쪽 글자 */
 .customer_wrap1_box1_left h2 {
   font-size: 24px;
@@ -288,7 +289,7 @@ section {
   margin-bottom: 60px;
 }
 
-/* 티켓 안내 - 박스1 */
+/* 티켓 안내 - 박스 */
 .customer_wrap2_box1 {
   display: flex;
   justify-content: space-between;
@@ -299,49 +300,14 @@ section {
 .wrap2_box1_left p:nth-child(1) {
   font-size: 20px;
   font-weight: 500;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .wrap2_box1_right img {
   cursor: pointer;
 }
 
-/* 티켓 안내 - 박스2 */
-.customer_wrap2_box2 {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 20px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
-}
-
-/* 티켓 안내 - 박스3 */
-.customer_wrap2_box3 {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 20px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
-}
-
-/* 티켓 안내 - 박스4 */
-.customer_wrap2_box4 {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 20px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
-}
-
-/* 티켓 안내 - 박스5 */
-.customer_wrap2_box5 {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 20px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
-}
-
+/* 이용안내 */
 .customer_wrap3 {
   width: 100%;
   height: fit-content;
@@ -356,41 +322,6 @@ section {
 }
 
 .customer_wrap3_box1 {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 20px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
-}
-.customer_wrap3_box2 {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 20px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
-}
-.customer_wrap3_box3 {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 20px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
-}
-.customer_wrap3_box4 {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 20px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
-}
-.customer_wrap3_box5 {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 20px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
-}
-.customer_wrap3_box6 {
   display: flex;
   justify-content: space-between;
   padding-bottom: 20px;
