@@ -72,22 +72,25 @@
 }
 
 /* 24th 타임세일 - 이미지영역 */
-.sub3_sec1_bottom {
+.swiper_my {
   width: 100%;
   height: 820px;
   display: flex;
   overflow: hidden;
-  gap: 30px;
   justify-content: center;
 }
 
-.sub3_sec1_bottom > .sec1_card {
-  width: fit-content;
+.swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  width: 100%;
   height: fit-content;
   text-align: center;
 }
-
-.sub3_sec1_bottom > .sec1_card > div:first-child {
+.swiper_my .swiper-slide > div:first-child {
   width: 450px;
   height: 600px;
   overflow: hidden;
@@ -95,21 +98,22 @@
   margin-bottom: 30px;
 }
 
-.sub3_sec1_bottom > .sec1_card > div:first-child > img {
+.swiper_my .swiper-slide > div:first-child > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.sub3_sec1_bottom .sec1_card_content {
+.swiper_my .sec1_card_content {
   text-align: center;
 }
-.sub3_sec1_bottom .sec1_card_content > p:nth-child(1) {
+
+.swiper_my p:nth-child(1) {
   font-size: 26px;
   font-weight: 400;
   line-height: 45px;
 }
-.sub3_sec1_bottom .sec1_card_content > p:nth-child(2) {
+.swiper_my p:nth-child(2) {
   font-size: 24px;
   font-weight: 300;
 }

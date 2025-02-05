@@ -4,9 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ARTCODE</title>
-    <link rel="stylesheet" href="./css/layout.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/layout.css" />
   </head>
   <body>
     <div class="container">
@@ -106,17 +111,43 @@
                 <h2>75,123,856회</h2>
               </div>
               <!-- 아래 컨텐츠 영역 -->
-              <div class="right_bottom">
-                <div>
-                  <img
-                    src="./img/icon/yellow security button.png"
-                    alt="yellow_safe_btn"
-                  />
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div>
+                      <img
+                        src="./img/icon/yellow security button.png"
+                        alt="안심배지 아이콘"
+                      />
+                    </div>
+                    <div class="safe_txt">
+                      <p>아트코트 안심 배지 제도</p>
+                      <p>모든 거래는 이중인증을 진행하고 있어요.</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div>
+                      <img src="./img/icon/gift.png" alt="이벤트 정보 아이콘" />
+                    </div>
+                    <div class="safe_txt">
+                      <p>아트코드 이벤트 정보</p>
+                      <p>실시간으로 올라오는 이벤트를 확인하세요.</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div>
+                      <img
+                        src="./img/icon/artcodeonly.png"
+                        alt="회원전용 티켓 아이콘"
+                      />
+                    </div>
+                    <div class="safe_txt">
+                      <p>아트코드 회원전용 티켓</p>
+                      <p>오직 아트코드에서만 즐길 수 있는 문화생활</p>
+                    </div>
+                  </div>
                 </div>
-                <div class="safe_txt">
-                  <p>아트코트 안심 배지 제도</p>
-                  <p>모든 거래는 이중인증을 진행하고 있어요.</p>
-                </div>
+                <div class="swiper-pagination"></div>
               </div>
             </div>
           </div>
@@ -666,5 +697,6 @@
         </div>
       </footer>
     </div>
+    <script src="./js/main.sm.js"></script>
   </body>
 </html>

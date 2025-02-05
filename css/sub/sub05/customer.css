@@ -154,6 +154,7 @@
 .customer_wrap1_box1_left > .plus_wrap {
   display: flex;
   gap: 10px;
+  cursor: pointer;
 }
 .customer_wrap1_box1_left > .plus_wrap > div {
   width: 40px;
@@ -170,6 +171,7 @@
 }
 .customer_wrap1_box1_right:hover {
   transform: scale(1.1);
+  cursor: pointer;
 }
 
 .customer_wrap1_box1_right > div {
@@ -182,6 +184,34 @@
   height: 100%;
 }
 
+/* 고객센터 내용 - 중간*/
+
+.customer_content {
+  width: 100%;
+  height: fit-content;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.customer_content_box {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 32px 20px;
+}
+
+.customer_content_top h2 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.customer_content_bottom {
+  line-height: 50px;
+}
 /* 티켓 안내 */
 .customer_wrap2 {
   width: 100%;
@@ -195,6 +225,7 @@
   font-weight: 700;
   line-height: 40px;
   margin-bottom: 60px;
+  margin-top: 180px;
 }
 
 /* 티켓 안내 - 박스 */

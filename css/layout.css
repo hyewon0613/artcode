@@ -164,7 +164,7 @@
 }
 
 /* 메인 오른쪽-하단 */
-.right_bottom {
+.swiper {
   width: 682px;
   height: 186px;
   background-color: #f6f6f6;
@@ -175,13 +175,27 @@
   gap: 40px;
 }
 
-.right_bottom p:first-child {
+.swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.swiper p:first-child {
   font-size: 26px;
   font-weight: 400;
   margin-bottom: 20px;
 }
 
-.right_bottom p:nth-child(2) {
+.swiper p:nth-child(2) {
   font-size: var(--sm-font-size);
   font-weight: 200;
 }

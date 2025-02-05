@@ -71,22 +71,27 @@
 }
 
 /* 베스트랭킹 - 이미지영역 */
-.sub2_sec1_bottom {
+.swiper_mySwiper {
   width: 100%;
-  height: 820px;
+  height: 750px;
   display: flex;
   overflow: hidden;
-  gap: 30px;
   justify-content: center;
+  transition-timing-function: linear !important;
 }
 
-.sub2_sec1_bottom .sec1_card {
-  width: fit-content;
+.swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper_mySwiper .swiper-slide {
+  width: 450px;
   height: fit-content;
   text-align: center;
 }
 
-.sub2_sec1_bottom .sec1_card > div:first-child {
+.swiper_mySwiper .swiper-slide > div:first-child {
   width: 450px;
   height: 600px;
   overflow: hidden;
@@ -94,21 +99,22 @@
   margin-bottom: 30px;
 }
 
-.sub2_sec1_bottom .sec1_card > div:first-child > img {
+.swiper_mySwiper .swiper-slide > div:first-child > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.sub2_sec1_bottom .sec1_card .sec1_card_content {
+.swiper_mySwiper .sec1_card_content {
   text-align: center;
 }
-.sub2_sec1_bottom .sec1_card .sec1_card_content > p:nth-child(1) {
+
+.swiper_mySwiper p:nth-child(1) {
   font-size: 26px;
   font-weight: 400;
   line-height: 45px;
 }
-.sub2_sec1_bottom .sec1_card .sec1_card_content > p:nth-child(2) {
+.swiper_mySwiper p:nth-child(2) {
   font-size: 24px;
   font-weight: 300;
 }
