@@ -77,7 +77,7 @@
   display: flex;
   overflow: hidden;
   justify-content: center;
-  transition-timing-function: linear !important;
+  cursor: pointer;
 }
 
 .swiper-wrapper {

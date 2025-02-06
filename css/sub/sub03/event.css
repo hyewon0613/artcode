@@ -78,6 +78,7 @@
   display: flex;
   overflow: hidden;
   justify-content: center;
+  cursor: pointer;
 }
 
 .swiper-wrapper {
@@ -319,4 +320,89 @@
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+}
+
+/* 이달의 이벤트 */
+.sub3_sec3 {
+  width: 100%;
+  height: auto;
+  padding: 200px 0;
+}
+
+.sub3_sec3_con {
+  width: 1600px;
+  height: fit-content;
+  margin: 0 auto;
+}
+
+/* 이달의 이벤트 위 - 제목, 기간 */
+.sub3_sec3_top {
+  margin-bottom: 60px;
+}
+
+/* 이달의 이벤트 - 제목 */
+.sub3_sec3_top h2 {
+  font-size: 45px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* 이달의 이벤트 - 기간 */
+.sub3_sec3_top p {
+  text-align: end;
+}
+
+/* 이달의 이벤트 아래 - 이벤트 4개 */
+.sub3_sec3_bottom {
+  width: 100%;
+  height: auto;
+}
+
+/* 이달의 이벤트 위에 2개 */
+.sub3_sec3_wrap1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+
+/* 이달의 이벤트 아래 2개 */
+.sub3_sec3_wrap2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.event_box div:nth-child(1) {
+  margin-bottom: 30px;
+}
+
+.event_box div:first-child {
+  width: 745px;
+  height: 421px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.event_box div:first-child img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+/* 이벤트4개에 각 마우스 오버하면 커짐 */
+.event_box img:hover {
+  transform: scale(1.1);
+}
+
+/* 이달의 이벤트 글자 설명 */
+.event_box div:nth-child(2) p:nth-child(1) {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.event_box div:nth-child(2) p:nth-child(2) {
+  font-size: 20px;
+  font-weight: 300;
 }

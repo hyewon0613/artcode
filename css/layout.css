@@ -352,12 +352,18 @@
 }
 
 /* 첫번째 섹션 - 전체보기 버튼 / 마우스를 올리면 */
+/* 글자 변화 */
 .sec1_btn:hover > a {
   font-weight: 500;
 }
 
 .sec1_btn > a > img {
-  padding-top: 2.5px;
+  transition: 0.5s;
+}
+
+/* 아이콘 변화 */
+.sec1_btn:hover > a > img {
+  transform: scale(1.1);
 }
 
 /* 두번째 섹션 - review track */
@@ -823,7 +829,7 @@
 
 .icon_box div img {
   margin-bottom: 16px;
-  padding-left: 3px;
+  margin-right: 8px;
 }
 
 .icon_box p {
