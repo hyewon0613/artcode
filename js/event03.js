@@ -16,6 +16,7 @@ const swiper = new Swiper(".swiper_my", {
   // And if we need scrollbar
   scrollbar: {
     el: ".swiper-scrollbar",
+    hide: true,
   },
 
   autoplay: {

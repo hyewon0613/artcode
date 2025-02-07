@@ -200,13 +200,18 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: 0.3s;
+  border-radius: 20px;
 }
-
+.sec2_card > div:first-child:hover > img {
+  transform: translateY(-20px);
+  border-radius: 20px;
+}
 .sec2_card .sec2_card_content {
   width: 350px;
 }
 .sec2_card .sec2_card_content > p:nth-child(1) {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   color: #fff;
   margin-bottom: 10px;
@@ -219,12 +224,145 @@
 }
 
 .sec2_card .sec2_card_content > p:nth-child(3) {
-  font-size: 28px;
-  color: #ffcd34;
+  font-size: 26px;
+  color: #fff;
   font-weight: 800;
 }
 
+/* 세번째 섹션 */
 .sub4_sec3 {
   background-color: #fff;
   margin-top: 200px;
+}
+
+.sub4_sec3_con {
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+}
+
+/* 세번째 섹션 - 글자박스 */
+.sub4_sec3_wrap1 {
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+}
+
+.sub4_sec3_wrap1 p:first-child {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.sub4_sec3_wrap1 p:nth-child(2) {
+  font-size: 28px;
+  font-weight: 300;
+}
+/* 세번째 섹션 - 슬라이드 박스 - 위 / 중간 / 아래 */
+.sub4_sec3_topbox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 130px;
+}
+
+.sub4_sec3_middlebox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 70px;
+}
+.sub4_sec3_bottombox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 70px;
+}
+
+/* 글자 + 프로필 박스 */
+.topbox_num1 {
+  display: flex;
+  align-items: center;
+  padding: 10px 30px 10px 15px;
+  gap: 10px;
+  background-color: #f7f7f7;
+  border-radius: 20px;
+}
+
+/* 프로필 일러스트 */
+.topbox_num1 div:nth-child(1) {
+  width: 100px;
+  height: 80px;
+}
+.topbox_num1 div:nth-child(1) img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* 프로필 글자  */
+.topbox_num1 p:nth-of-type(1) {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+.topbox_num1 p:nth-of-type(2) {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* 프로필 박스 */
+.topbox_num2 {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* 
+ */
+/* 세번째 섹션 - 버튼 */
+.sub4_sec3_wrap3 {
+  width: fit-content;
+  height: 100%;
+  margin: 100px auto;
+}
+
+.sub4_sec3_btn {
+  width: fit-content;
+  height: fit-content;
+}
+
+.sub4_sec3_btn a {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  padding: 13px 60px;
+  border-radius: 6px;
+  background-color: #fff;
+  border: 1px solid #efefef;
+  font-weight: 300;
+  margin-top: 70px;
+  gap: 15px;
+  transition: 0.5s;
+}
+
+/* 마우스 올리면 글자 변화 */
+.sub4_sec3_btn:hover > a {
+  font-weight: 500;
+}
+
+.sub4_sec3_btn > a > img {
+  transition: 0.5s;
+}
+
+/* 아이콘 변화 */
+.sub4_sec3_btn:hover > a > img {
+  transform: scale(1.1);
 }

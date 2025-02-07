@@ -15,6 +15,7 @@ $(".circle-graph").each(function (index, node) {
     animation: {
       duration: 1200,
     },
+
     lineCap: "round", // 그래프 선 모양
     reverse: false, // 그래프가 진행되는 방향
   });
