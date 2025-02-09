@@ -2,6 +2,9 @@
 @import url("../../reset.css");
 @import url("../../common.css");
 
+body {
+  overflow-x: hidden;
+}
 .sub4_sec1 {
   padding: 200px 0;
 }
@@ -266,8 +269,17 @@
   align-items: center;
   gap: 40px;
   margin-top: 130px;
+  animation: slideleft 14s linear infinite;
 }
 
+@keyframes slideleft {
+  0% {
+    transform: translateX(-20%);
+  }
+  100% {
+    transform: translateX(30%);
+  }
+}
 .sub4_sec3_middlebox {
   width: 100%;
   height: 100%;
@@ -275,6 +287,15 @@
   align-items: center;
   gap: 40px;
   margin-top: 70px;
+  animation: slideright 14s linear infinite;
+}
+@keyframes slideright {
+  0% {
+    transform: translateX(30%);
+  }
+  100% {
+    transform: translateX(-20%);
+  }
 }
 .sub4_sec3_bottombox {
   width: 100%;
@@ -283,13 +304,22 @@
   align-items: center;
   gap: 40px;
   margin-top: 70px;
+  animation: slidebottom 14s linear infinite;
 }
-
+@keyframes slidebottom {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(30%);
+  }
+}
 /* 글자 + 프로필 박스 */
 .topbox_num1 {
   display: flex;
   align-items: center;
-  padding: 10px 30px 10px 15px;
+  width: 452px;
+  height: 100px;
   gap: 10px;
   background-color: #f7f7f7;
   border-radius: 20px;
@@ -320,7 +350,6 @@
 /* 프로필 박스 */
 .topbox_num2 {
   width: 80px;
-  height: 60px;
   object-fit: cover;
   border-radius: 20px;
 }
@@ -350,12 +379,13 @@
   font-weight: 300;
   margin-top: 70px;
   gap: 15px;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
 /* 마우스 올리면 글자 변화 */
 .sub4_sec3_btn:hover > a {
   font-weight: 500;
+  border: 1px solid #474747;
 }
 
 .sub4_sec3_btn > a > img {

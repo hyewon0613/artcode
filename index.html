@@ -12,6 +12,8 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./css/layout.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <div class="container">
@@ -149,62 +151,237 @@
         </section>
         <!-- 첫번째 섹션 -->
         <section class="main_sec1">
-          <div class="track_box">
-            <img src="./img/main/record.png" alt="record" />
-            <div class="hot_txt">
-              <p>01 HOT TRACK</p>
-              <p>지금 뜨는 추천 공연 TOP 7</p>
-            </div>
-          </div>
-          <div class="track_show">
-            <div class="left_img_box">
-              <a href="#">
-                <img src="./img/main/hot1.png" alt="hot1" />
-              </a>
-            </div>
-            <div class="right_img_box">
-              <div class="right_box_top">
-                <div>
-                  <a href="#">
-                    <img src="./img/main/hot2.png" alt="hot2" />
-                  </a>
-                </div>
-                <div>
-                  <a href="#">
-                    <img src="./img/main/hot3.png" alt="hot3" />
-                  </a>
-                </div>
-                <div>
-                  <a href="#">
-                    <img src="./img/main/hot4.png" alt="hot4" />
-                  </a>
-                </div>
-              </div>
-              <div class="right_box_bottom">
-                <div>
-                  <a href="#">
-                    <img src="./img/main/hot5.png" alt="hot5" />
-                  </a>
-                </div>
-                <div>
-                  <a href="#">
-                    <img src="./img/main/hot6.png" alt="hot6" />
-                  </a>
-                </div>
-                <div>
-                  <a href="#">
-                    <img src="./img/main/hot7.png" alt="hot7" />
-                  </a>
-                </div>
+          <div class="main_sec1_con">
+            <div
+              class="track_box"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+            >
+              <img src="./img/main/record.png" alt="record" />
+              <div class="hot_txt">
+                <p>01 HOT TRACK</p>
+                <p>지금 뜨는 추천 공연 TOP 7</p>
               </div>
             </div>
-          </div>
-          <div class="sec1_btn">
-            <a href="#"
-              >리뷰 전체보기<img
-                src="./img/main/mynaui_chat-plus.svg"
-                alt="더보기"
-            /></a>
+            <!-- 첫번째 섹션 - 사진 -->
+            <div class="track_show">
+              <!-- 첫번째 섹션 왼쪽 큰 사진 -->
+              <div class="left_card">
+                <div class="left_card_inner">
+                  <div class="left_image">
+                    <img src="./img/main/hot1.png" alt="hot1" />
+                  </div>
+                  <div class="left_card_text">
+                    <p>내한공연</p>
+                    <div class="left_card_content">
+                      <div>
+                        <h3>Best of Fujii Kaze</h3>
+                        <p>2020-2024</p>
+                        <p>ASIA TOUR in SEOUL</p>
+                      </div>
+                      <div>
+                        <div class="sm_text">
+                          <p>장소</p>
+                          <p>일시</p>
+                          <p>예매율</p>
+                        </div>
+                        <div class="sm_text2">
+                          <p>서울 고척 스카이돔</p>
+                          <p>2024.12.14 - 2025.02.14</p>
+                          <p><span>93% </span>/ 100%</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 첫번째 섹션 오른쪽 사진 6개 -->
+              <div class="right_img_box">
+                <!-- 오른쪽 위 사진 3개 -->
+                <div class="right_box_top">
+                  <div class="right_card">
+                    <div class="right_card_inner">
+                      <div class="right_image">
+                        <img src="./img/main/hot2.png" alt="hot2" />
+                      </div>
+                      <div class="right_card_text">
+                        <p>연극</p>
+                        <div class="right_card_content">
+                          <div>
+                            <h3>THE BOYS IN THE BAND</h3>
+                            <p>BY MART CROWLEY</p>
+                          </div>
+                          <div>
+                            <div class="sm_text">
+                              <p>장소</p>
+                              <p>일시</p>
+                              <p>예매율</p>
+                            </div>
+                            <div class="sm_text2">
+                              <p>링크 아트센터드림</p>
+                              <p>2024.10.08 - 2025.12.29</p>
+                              <p><span>87% </span>/ 100%</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right_card">
+                    <div class="right_card_inner">
+                      <div class="right_image">
+                        <img src="./img/main/hot3.png" alt="hot3" />
+                      </div>
+                      <div class="right_card_text">
+                        <p>팝업스토어</p>
+                        <div class="right_card_content">
+                          <div>
+                            <h3>Merry Socks Appeal Christmas</h3>
+                            <p>in LCDC</p>
+                          </div>
+                          <div>
+                            <div class="sm_text">
+                              <p>장소</p>
+                              <p>일시</p>
+                              <p>예매율</p>
+                            </div>
+                            <div class="sm_text2">
+                              <p>서울특별시 성동구 LCDC</p>
+                              <p>2024.11.29 - 2024.12.25</p>
+                              <p><span>73% </span>/ 100%</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right_card">
+                    <div class="right_card_inner">
+                      <div class="right_image">
+                        <img src="./img/main/hot4.png" alt="hot4" />
+                      </div>
+                      <div class="right_card_text">
+                        <p>콘서트</p>
+                        <div class="right_card_content">
+                          <div>
+                            <h3>그해, 겨울을 지나서</h3>
+                            <p>로운 팬미팅 콘서트</p>
+                          </div>
+                          <div>
+                            <div class="sm_text">
+                              <p>장소</p>
+                              <p>일시</p>
+                              <p>예매율</p>
+                            </div>
+                            <div class="sm_text2">
+                              <p>연세대학교 대강당</p>
+                              <p>2024.12.30 - 2024.12.31</p>
+                              <p><span>67% </span>/ 100%</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 오른쪽 아래 사진3개 -->
+                <div class="right_box_bottom">
+                  <div class="right_card">
+                    <div class="right_card_inner">
+                      <div class="right_image">
+                        <img src="./img/main/hot5.png" alt="hot5" />
+                      </div>
+                      <div class="right_card_text">
+                        <p>연극</p>
+                        <div class="right_card_content">
+                          <div>
+                            <h3>비누향기</h3>
+
+                            <p>비가 울리면 누군가의 향기가 난다</p>
+                          </div>
+                          <div>
+                            <div class="sm_text">
+                              <p>장소</p>
+                              <p>일시</p>
+                              <p>예매율</p>
+                            </div>
+                            <div class="sm_text2">
+                              <p>대학로 서연아트홀</p>
+                              <p>2024.07.01 - 2025.02.14</p>
+                              <p><span>36% </span>/ 100%</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right_card">
+                    <div class="right_card_inner">
+                      <div class="right_image">
+                        <img src="./img/main/hot6.png" alt="hot6" />
+                      </div>
+                      <div class="right_card_text">
+                        <p>뮤지컬</p>
+                        <div class="right_card_content">
+                          <div>
+                            <h3>무명호걸</h3>
+                            <p>조선의 심장을 지켜낼 그날</p>
+                          </div>
+                          <div>
+                            <div class="sm_text">
+                              <p>장소</p>
+                              <p>일시</p>
+                              <p>예매율</p>
+                            </div>
+                            <div class="sm_text2">
+                              <p>CKL 스테이지</p>
+                              <p>2025.02.04 - 2025.02.19</p>
+                              <p><span>57% </span>/ 100%</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right_card">
+                    <div class="right_card_inner">
+                      <div class="right_image">
+                        <img src="./img/main/hot7.png" alt="hot6" />
+                      </div>
+                      <div class="right_card_text">
+                        <p>뮤지컬</p>
+                        <div class="right_card_content">
+                          <div>
+                            <h3>ALICE IN 완다랜드</h3>
+                            <p>완전 다른 세상 이야기</p>
+                          </div>
+                          <div>
+                            <div class="sm_text">
+                              <p>장소</p>
+                              <p>일시</p>
+                              <p>예매율</p>
+                            </div>
+                            <div class="sm_text2">
+                              <p>서울 고척 스카이돔</p>
+                              <p>2025.01.05 - 2025.02.14</p>
+                              <p><span>42% </span>/ 100%</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 첫번째 섹션 전체보기 버튼 -->
+                <div class="sec1_btn">
+                  <a href="#"
+                    >리뷰 전체보기<img
+                      src="./img/main/mynaui_chat-plus.svg"
+                      alt="더보기"
+                  /></a>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
         <!-- 두번째 섹션 -->
@@ -213,7 +390,11 @@
             <!-- 텍스트 박스 영역_왼쪽 -->
             <div class="text_wrap">
               <!-- 타이틀 영역 -->
-              <div class="track_box">
+              <div
+                class="track_box"
+                data-aos="fade-right"
+                data-aos-duration="1500"
+              >
                 <img src="./img/main/record.png" alt="record" />
                 <div class="hot_txt">
                   <p>02 REVIEW TRACK</p>
@@ -258,7 +439,11 @@
         <!-- 세번째 섹션 -->
         <section class="main_sec3">
           <div class="sec3_con">
-            <div class="track_box">
+            <div
+              class="track_box"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+            >
               <img src="./img/main/record.png" alt="record" />
               <div class="tosell_txt">
                 <p>03 TO SELL TRACK</p>
@@ -554,7 +739,11 @@
         <section class="main_sec4">
           <div class="sec4_con">
             <!-- 네번째 섹션 - 제목 -->
-            <div class="track_box">
+            <div
+              class="track_box"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+            >
               <img src="./img/main/record.png" alt="record" />
               <div class="only_txt">
                 <p>04 ONLY TRACK</p>
@@ -585,7 +774,11 @@
         <section class="main_sec5">
           <div class="sec5_con">
             <div class="sec5_top">
-              <div class="track_box">
+              <div
+                class="track_box"
+                data-aos="fade-right"
+                data-aos-duration="1500"
+              >
                 <img src="./img/main/record.png" alt="record" />
                 <div class="service_txt">
                   <p>05 SERVICE TRACK</p>
@@ -663,9 +856,24 @@
                   </a>
                 </div>
                 <div class="qna_content_box">
-                  <p>안심 거래는 어떻게 하나요?</p>
-                  <p>티켓 환불은 가능한가요?</p>
-                  <p>예매한 티켓은 어떻게 받나요?</p>
+                  <div>
+                    <p>안심 거래는 어떻게 하나요?</p>
+                    <div>
+                      <img src="./img/sub05/chevron-down.svg" alt="" />
+                    </div>
+                  </div>
+                  <div>
+                    <p>티켓 환불은 가능한가요?</p>
+                    <div>
+                      <img src="./img/sub05/chevron-down.svg" alt="" />
+                    </div>
+                  </div>
+                  <div>
+                    <p>예매한 티켓은 어떻게 받나요?</p>
+                    <div>
+                      <img src="./img/sub05/chevron-down.svg" alt="" />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -704,5 +912,8 @@
       </footer>
     </div>
     <script src="./js/main.sm.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

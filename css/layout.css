@@ -200,43 +200,30 @@
   font-weight: 200;
 }
 
+/* =================================================================== */
 /* 첫번째 섹션 - hot track */
 
 .main_sec1 {
   width: 100%;
   height: auto;
+  padding-bottom: 400px;
 }
-
+.main_sec1_con {
+  width: 1462px;
+  height: 100%;
+  margin: 0 auto;
+}
 /* 첫번째 섹션 - 제목 */
-.main_sec1 .track_box {
+.main_sec1_con .track_box {
   width: fit-content;
   height: fit-content;
   display: flex;
   gap: 14px;
   margin: 0 auto;
   margin-bottom: 120px;
-  opacity: 0;
-  transform: translateY(20%);
-  animation: slideIn 2s forwards;
 }
 
-@keyframes slideIn {
-  0% {
-    opacity: 0;
-    transform: translateY(20%);
-  }
-
-  50% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-}
-
-.main_sec1 .track_box img {
+.main_sec1_con .track_box img {
   width: 70px;
   height: 70px;
 }
@@ -254,114 +241,255 @@
 
 /* 첫번째 섹션 - 사진 */
 .track_show {
-  margin: 0 auto;
-  width: fit-content;
-  height: 733px;
+  width: 100%;
+  height: 732px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 20px;
+  justify-content: space-between;
 }
-
-.left_img_box {
+/* 첫번째 섹션 - 왼쪽 카드 */
+.left_card {
   border-radius: 30px;
   overflow: hidden;
-  width: 100%;
+  width: 572px;
   height: 100%;
 }
-
-/* 마우스 올렸을 때 첫번째 사진이 커짐 */
-.left_img_box a {
+.left_card_inner {
   width: 100%;
   height: 100%;
-  transition: 0.5s;
+  position: relative;
 }
 
-.left_img_box:hover a {
-  transform: scale(1.1);
-}
-
-/* 마우스 올렸을 때 이미지 어두워짐 */
-.left_img_box img {
+.left_image > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* 첫번째 섹션 - 왼쪽 카드 (사진, 내용)*/
+.left_card_text,
+.left_image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
   transition: 0.5s;
 }
-.left_img_box:hover img {
+/* 왼쪽 카드 글자 안보이게*/
+.left_card_text {
+  opacity: 0;
+  color: #fff;
+  text-align: center;
+}
+/* 왼쪽 카드 효과 */
+.left_card:hover .left_image {
   filter: brightness(50%);
+  transform: scale(1.1);
+}
+/* 왼쪽 카드 마우스 올렸을 때 글 나오기*/
+.left_card:hover .left_card_text {
+  opacity: 1;
+}
+
+.left_card_text > p {
+  font-size: 18px;
+  text-align: center;
+  margin-left: 30px;
+  margin-top: 26px;
+  width: fit-content;
+  background-color: #ffcd34;
+  border-radius: 20px;
+  padding: 10px 22px;
+  color: #000;
+  font-weight: 600;
+}
+/* 왼쪽 카드 텍스트 박스 */
+.left_card_content {
+  width: 400px;
+  margin: 140px auto;
+}
+
+/* 왼쪽 카드 텍스트 - 공연제목 */
+.left_card_content > div:nth-of-type(1) h3 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* 왼쪽 카드 텍스트 - 공연 날짜, 장소 */
+.left_card_content > div:nth-of-type(1) p {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 40px;
+}
+/* 왼쪽 카드 텍스트 - 제목 밑에 줄 */
+.left_card_content > div:nth-of-type(1) p:nth-of-type(2) {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 30px;
+}
+
+/* 왼쪽 카드 텍스트 - 밑에 텍스트 박스*/
+.left_card_content > div:nth-of-type(2) {
+  padding-top: 30px;
+  display: flex;
+  font-size: 18px;
+  line-height: 40px;
+  gap: 30px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+/* 왼쪽 카드 텍스트 - 장소, 일시, 예매율 */
+.left_card_content .sm_text {
+  font-weight: 500;
+  text-align: start;
+}
+
+.left_card_content .sm_text2 {
+  font-weight: 400;
+  text-align: start;
+}
+
+/* 왼쪽 카드 텍스트 - 예매율 폰트색 */
+.left_card_content .sm_text2 p > span {
+  color: #ffcd34;
+  font-weight: 500;
+}
+
+/* ------------------------------------------- */
+/* 오른쪽 카드 */
+.right_card {
+  border-radius: 30px;
+  overflow: hidden;
+  width: 273px;
+  height: 358px;
+}
+.right_card_inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.right_image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* 첫번째 섹션 - 오른쪽 카드 (사진, 내용)*/
+.right_card_text,
+.right_image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+/* 오른쪽 카드 글자 안보이게*/
+.right_card_text {
+  opacity: 0;
+  color: #fff;
+  text-align: center;
+}
+/* 오른쪽 카드 효과 */
+.right_card:hover .right_image {
+  filter: brightness(40%);
+  transform: scale(1.1);
+}
+/* 오른쪽 카드 마우스 올렸을 때 글 나오기*/
+.right_card:hover .right_card_text {
+  opacity: 1;
 }
 
 /* 오른쪽 사진 6개 */
 .right_img_box {
   width: fit-content;
-  height: 733px;
-}
-
-.right_img_box a {
-  width: 273px;
-  height: 358px;
+  height: 732px;
 }
 
 /*  오른쪽 사진 위 3장 */
 .right_box_top {
   display: flex;
   margin-bottom: 16px;
-  gap: 16px;
-}
-.right_box_top > div {
-  width: 273px;
-  height: 358px;
-  overflow: hidden;
-  border-radius: 20px;
-  transition: 0.5s;
-}
-
-.right_box_top > div:hover img {
-  transform: scale(1.1);
-  filter: brightness(50%);
+  gap: 24px;
 }
 
 /*  오른쪽 사진 아래 3장 */
 .right_box_bottom {
   display: flex;
-  gap: 16px;
+  gap: 24px;
 }
 
-.right_box_bottom > div {
-  width: 273px;
-  height: 358px;
-  overflow: hidden;
+.right_card_text > p {
+  font-size: 13px;
+  text-align: center;
+  margin-left: 20px;
+  margin-top: 16px;
+  width: fit-content;
+  background-color: #ffcd34;
   border-radius: 20px;
-  transition: 0.5s;
-}
-.right_img_box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 20px;
-  transition: 0.5s;
-}
-
-.right_box_bottom > div:hover img {
-  transform: scale(1.1);
-  filter: brightness(50%);
-}
-
-.left_img_box > p {
-  font-family: "Passion One", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 128px;
+  padding: 8px 16px;
   color: #000;
+  font-weight: 700;
+}
+/* 오른쪽 카드 텍스트 박스 */
+.right_card_content {
+  width: 200px;
+  margin: 70px auto;
+}
+
+/* 오른쪽 카드 텍스트 - 공연제목 */
+.right_card_content > div:nth-of-type(1) h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+/* 오른쪽 카드 텍스트 - 공연 날짜, 장소 */
+.right_card_content > div:nth-of-type(1) p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 15px;
+}
+
+/* 오른쪽 카드 텍스트 - 밑에 텍스트 박스*/
+.right_card_content > div:nth-of-type(2) {
+  padding-top: 15px;
+  display: flex;
+  font-size: 12px;
+  line-height: 26px;
+  gap: 15px;
+  width: 200px;
+  margin: 0 auto;
+}
+
+/* 오른쪽 카드 텍스트 - 장소, 일시, 예매율 */
+.right_card_content .sm_text {
+  font-weight: 500;
+  text-align: start;
+}
+
+.right_card_content .sm_text2 {
+  font-weight: 400;
+  text-align: start;
+}
+
+/* 오른쪽 카드 텍스트 - 예매율 폰트색 */
+.right_card_content .sm_text2 p > span {
+  color: #ffcd34;
+  font-weight: 500;
 }
 
 /* 첫번째 섹션 - 전체보기 버튼 */
 .sec1_btn {
   width: fit-content;
   height: fit-content;
-  margin-left: 1420px;
-  margin-bottom: 120px;
+  float: right;
 }
 
 .sec1_btn > a {
@@ -375,13 +503,14 @@
   font-weight: 300;
   margin-top: 70px;
   gap: 15px;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
 /* 첫번째 섹션 - 전체보기 버튼 / 마우스를 올리면 */
 /* 글자 변화 */
 .sec1_btn:hover > a {
   font-weight: 500;
+  border: 1px solid #474747;
 }
 
 .sec1_btn > a > img {
@@ -393,10 +522,12 @@
   transform: scale(1.1);
 }
 
+/* =================================================================== */
 /* 두번째 섹션 - review track */
 .main_sec2 {
   width: 100%;
-  height: 1030px;
+  height: auto;
+  padding-bottom: 400px;
   overflow: hidden;
 }
 
@@ -411,16 +542,15 @@
 }
 
 .text_wrap {
-  width: fit-content;
-  height: fit-content;
-  margin-left: 232px;
+  width: 100%;
+  height: auto;
+  transform: translateX(232px);
 }
 
 .text_wrap > .track_box {
   color: #fff;
-  margin-bottom: 80px;
-  margin-left: 0px;
   display: flex;
+  margin-bottom: 80px;
   gap: 14px;
 }
 
@@ -480,7 +610,7 @@
   font-weight: 300;
   margin-top: 50px;
   gap: 15px;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
 .sec2_btn:hover > a {
@@ -488,7 +618,11 @@
 }
 
 .sec2_btn > a > img {
-  padding-top: 2.5px;
+  transition: 0.2s;
+}
+
+.sec2_btn:hover > a > img {
+  transform: scale(1.1);
 }
 
 /* 두번째 섹션- 리뷰이미지 */
@@ -523,6 +657,7 @@
   overflow: hidden;
 }
 
+/* =================================================================== */
 /* 세번째 섹션 - to sell track */
 .main_sec3 {
   width: 100%;
@@ -583,6 +718,17 @@
   border-left: 2px solid #949494;
   padding-left: 15px;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.region_box > p::before {
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  display: none;
+  content: "";
+  margin-right: 8px;
+  margin-bottom: 8px;
 }
 
 .region_box:hover > p::before {
@@ -591,13 +737,11 @@
   background-color: #949494;
   display: inline-block;
   content: "";
-
   margin-right: 8px;
   margin-bottom: 8px;
 }
-
-.region_box p {
-  transition: 0.5s;
+.region_box:hover {
+  padding: 0;
 }
 
 /* 지역키워드에 마우스를 올리면 */
@@ -725,22 +869,25 @@
   font-weight: 400;
   margin-top: 70px;
   gap: 15px;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
 .sec3_btn:hover > a {
   font-weight: 500;
+  border: 1px solid #474747;
 }
 
 .sec3_btn > a > img {
   padding-top: 2.5px;
 }
 
+/* =================================================================== */
 /* 네번째 섹션- only track */
 .main_sec4 {
   width: 100%;
   height: fit-content;
   overflow: hidden;
+  padding-bottom: 300px;
 }
 .sec4_con {
   width: 100%;
@@ -748,8 +895,7 @@
   background-color: #332f2d;
   display: flex;
   align-items: center;
-  margin-top: 300px;
-  margin-bottom: 300px;
+  margin-top: 400px;
 }
 
 /* 네번째 섹션 - 제목 */
@@ -757,7 +903,7 @@
   width: 500px;
   height: fit-content;
   display: flex;
-  margin-left: 232px;
+  margin-left: 154px;
   gap: 14px;
 }
 .sec4_con .track_box img {
@@ -799,11 +945,12 @@
   object-fit: cover;
 }
 
+/* =================================================================== */
 /* 다섯번째 섹션 - service track */
 .main_sec5 {
   width: 100%;
   height: fit-content;
-  margin-bottom: 200px;
+  margin-bottom: 300px;
 }
 
 .sec5_con {
@@ -863,12 +1010,13 @@
   font-weight: 300;
   color: #000;
   transition: 0.2s;
+  text-align: center;
 }
 
 /* 아이콘에 마우스를 올리면 */
 .icon_box:hover p {
   color: #ffcd34;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 /* 아래 2개 박스*/
@@ -910,6 +1058,11 @@
 .ai_title_box img {
   width: 35px;
   height: 35px;
+  transition: 0.2s;
+}
+
+.sec5_bottom_left:hover .ai_title_box img {
+  transform: scale(1.2);
 }
 
 /* artcode의 ai 컨텐츠 박스*/
@@ -921,6 +1074,14 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+.sec5_bottom_left .ai_chatbot img {
+  transition: 0.4s;
+  cursor: pointer;
+}
+.sec5_bottom_left .ai_chatbot:hover img {
+  transform: scale(1.1);
 }
 
 /* 글 박스 */
@@ -979,17 +1140,14 @@
 }
 
 /* 질문 3개 박스 */
-.qna_content_box {
-  width: 605px;
-  height: 184px;
-  margin: 0 auto;
-  margin: 40px 54px;
-  justify-content: space-around;
-}
 
-/* 질문 3개 글자 */
-.qna_content_box p {
-  font-size: 16px;
-  font-weight: 200;
-  line-height: 60px;
+.qna_content_box {
+  padding: 28px 60px;
+}
+.qna_content_box > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 70px;
+  font-size: 18px;
 }

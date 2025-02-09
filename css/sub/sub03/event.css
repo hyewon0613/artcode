@@ -182,7 +182,8 @@
 }
 
 /* best리뷰이벤트 - 공연 이름 4개*/
-.sub3_sec2_name p:nth-child(1) {
+
+/* .sub3_sec2_name p:nth-child(1) {
   background-color: #544b48;
   width: 280px;
   height: 40px;
@@ -218,6 +219,7 @@
   border-radius: 30px;
   color: #fff;
 }
+  */
 
 /* best리뷰이벤트 - 이미지영역 */
 .sub3_sec2_review {
@@ -350,6 +352,7 @@
 
 /* 이달의 이벤트 - 기간 */
 .sub3_sec3_top p {
+  font-size: 20px;
   text-align: end;
 }
 
@@ -388,12 +391,12 @@
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 
 /* 이벤트4개에 각 마우스 오버하면 커짐 */
 .event_box img:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 /* 이달의 이벤트 글자 설명 */
