@@ -298,7 +298,7 @@
 .sec2_review_text_middle {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
   margin-bottom: 22px;
 }
 .sec2_review_text_middle > div {

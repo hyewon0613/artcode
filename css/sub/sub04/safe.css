@@ -235,7 +235,7 @@ body {
 /* 세번째 섹션 */
 .sub4_sec3 {
   background-color: #fff;
-  margin-top: 200px;
+  margin-top: 300px;
 }
 
 .sub4_sec3_con {
@@ -261,6 +261,7 @@ body {
   font-size: 28px;
   font-weight: 300;
 }
+
 /* 세번째 섹션 - 슬라이드 박스 - 위 / 중간 / 아래 */
 .sub4_sec3_topbox {
   width: 100%;

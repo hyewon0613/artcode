@@ -151,6 +151,13 @@
         </section>
         <!-- 첫번째 섹션 -->
         <section class="main_sec1">
+          <!-- 플로팅 버튼 -->
+          <div class="floating_btn_wrap">
+            <button type="button" class="floating_btn">
+              <img src="./img/main/white cute chatbot.png" />
+            </button>
+          </div>
+          <!-- 첫번째 섹션 박스 -->
           <div class="main_sec1_con">
             <div
               class="track_box"
@@ -191,6 +198,7 @@
                           <p><span>93% </span>/ 100%</p>
                         </div>
                       </div>
+                      <p>더보기</p>
                     </div>
                   </div>
                 </div>
@@ -223,6 +231,7 @@
                               <p><span>87% </span>/ 100%</p>
                             </div>
                           </div>
+                          <p>더보기</p>
                         </div>
                       </div>
                     </div>
@@ -251,6 +260,7 @@
                               <p><span>73% </span>/ 100%</p>
                             </div>
                           </div>
+                          <p>더보기</p>
                         </div>
                       </div>
                     </div>
@@ -279,6 +289,7 @@
                               <p><span>67% </span>/ 100%</p>
                             </div>
                           </div>
+                          <p>더보기</p>
                         </div>
                       </div>
                     </div>
@@ -311,6 +322,7 @@
                               <p><span>36% </span>/ 100%</p>
                             </div>
                           </div>
+                          <p>더보기</p>
                         </div>
                       </div>
                     </div>
@@ -339,6 +351,7 @@
                               <p><span>57% </span>/ 100%</p>
                             </div>
                           </div>
+                          <p>더보기</p>
                         </div>
                       </div>
                     </div>
@@ -367,6 +380,7 @@
                               <p><span>42% </span>/ 100%</p>
                             </div>
                           </div>
+                          <p>더보기</p>
                         </div>
                       </div>
                     </div>
@@ -404,7 +418,7 @@
               <!--  리뷰 아이디박스 -->
               <div class="user_box">
                 <div>
-                  <img src="#" alt="" />
+                  <img src="./img/main/user_img.png" alt="프로필사진" />
                 </div>
                 <p>skc07048**</p>
               </div>
@@ -426,11 +440,11 @@
             <!-- 이미지 박스 오른쪽 -->
             <div class="img_wrap">
               <!-- 이미지 1번 영역 -->
-              <div>
+              <div class="review_img_box1">
                 <img src="./img/main/review1.png" alt="리뷰1" />
               </div>
               <!-- 이미지 2번 영역 -->
-              <div>
+              <div class="review_img_box2">
                 <img src="./img/main/review2.png" alt="리뷰2" />
               </div>
             </div>
@@ -451,6 +465,7 @@
               </div>
             </div>
             <div class="content_wrap">
+              <!-- 세번째 섹션 왼쪽 영역 -->
               <div class="content_left">
                 <div class="region_box">
                   <p>서울</p>
@@ -477,7 +492,9 @@
                   <p>경상도</p>
                 </div>
               </div>
+              <!-- 세번째 섹션 오른쪽 영역 -->
               <div class="content_right">
+                <!-- 지역 공연 1번째 줄 2개 -->
                 <div class="img_txt1">
                   <div class="img_txt_left">
                     <div class="content_img">
@@ -514,7 +531,7 @@
                               <strong class="circle-percent"></strong>
                             </div>
                           </div>
-                          <script src="./js/sec3_graph.js"></script>
+                          <script src="./js/sub/sec3_graph.js"></script>
                         </div>
                         <div class="graph_txt">
                           <p>실시간 예매율 : 78%</p>
@@ -561,7 +578,7 @@
                               <strong class="circle-percent"></strong>
                             </div>
                           </div>
-                          <script src="./js/sec3_graph2.js"></script>
+                          <script src="./js/sub/sec3_graph2.js"></script>
                         </div>
                         <div class="graph_txt">
                           <p>실시간 예매율 : 47%</p>
@@ -571,6 +588,7 @@
                     </div>
                   </div>
                 </div>
+                <!-- 지역 공연 2번째 줄 2개 -->
                 <div class="img_txt2">
                   <div class="img_txt_left">
                     <div class="content_img">
@@ -611,7 +629,7 @@
                               <strong class="circle-percent"></strong>
                             </div>
                           </div>
-                          <script src="./js/sec3_graph3.js"></script>
+                          <script src="./js/sub/sec3_graph3.js"></script>
                         </div>
                         <div class="area_graph"></div>
                         <div class="graph_txt">
@@ -646,7 +664,22 @@
                         </div>
                       </div>
                       <div class="content_txt_graph">
-                        <div class="area_graph"></div>
+                        <div class="area_graph">
+                          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+                          <div
+                            class="graph-wrap active-on-visible"
+                            data-active-on-visible-callback-func-name="CircleRun"
+                          >
+                            <div
+                              class="circle-graph-sec3_3"
+                              circleProgress="60"
+                            >
+                              <strong class="circle-percent"></strong>
+                            </div>
+                          </div>
+                          <script src="./js/sub/sec3_graph4.js"></script>
+                        </div>
                         <div class="graph_txt">
                           <p>실시간 예매율 : 56%</p>
                           <p>잔여좌석 : 25</p>
@@ -655,6 +688,7 @@
                     </div>
                   </div>
                 </div>
+                <!-- 지역 공연 3번째 줄 2개 -->
                 <div class="img_txt3">
                   <div class="img_txt_left">
                     <div class="content_img">
@@ -681,7 +715,22 @@
                         </div>
                       </div>
                       <div class="content_txt_graph">
-                        <div class="area_graph"></div>
+                        <div class="area_graph">
+                          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+                          <div
+                            class="graph-wrap active-on-visible"
+                            data-active-on-visible-callback-func-name="CircleRun"
+                          >
+                            <div
+                              class="circle-graph-sec3_4"
+                              circleProgress="60"
+                            >
+                              <strong class="circle-percent"></strong>
+                            </div>
+                          </div>
+                          <script src="./js/sub/sec3_graph5.js"></script>
+                        </div>
                         <div class="graph_txt">
                           <p>실시간 예매율 : 92%</p>
                           <p>잔여좌석 : 3</p>
@@ -715,7 +764,22 @@
                         </div>
                       </div>
                       <div class="content_txt_graph">
-                        <div class="area_graph"></div>
+                        <div class="area_graph">
+                          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+                          <div
+                            class="graph-wrap active-on-visible"
+                            data-active-on-visible-callback-func-name="CircleRun"
+                          >
+                            <div
+                              class="circle-graph-sec3_5"
+                              circleProgress="60"
+                            >
+                              <strong class="circle-percent"></strong>
+                            </div>
+                          </div>
+                          <script src="./js/sub/sec3_graph6.js"></script>
+                        </div>
                         <div class="graph_txt">
                           <p>실시간 예매율 : 97%</p>
                           <p>잔여좌석 : 1</p>
@@ -724,14 +788,15 @@
                     </div>
                   </div>
                 </div>
+                <!-- 전체보기 버튼 -->
+                <div class="sec3_btn">
+                  <a href="#"
+                    >전체 거래보기<img
+                      src="./img/main/mynaui_chat-plus.svg"
+                      alt="더보기"
+                  /></a>
+                </div>
               </div>
-            </div>
-            <div class="sec3_btn">
-              <a href="#"
-                >전체 거래보기<img
-                  src="./img/main/mynaui_chat-plus.svg"
-                  alt="더보기"
-              /></a>
             </div>
           </div>
         </section>
@@ -752,20 +817,37 @@
             </div>
             <!-- 이미지 영역 -->
             <div class="sec4_img_wrap">
-              <div>
-                <img src="./img/main/only1.png" alt="only1" />
-              </div>
-              <div>
-                <img src="./img/main/only2.png" alt="only2" />
-              </div>
-              <div>
-                <img src="./img/main/only3.png" alt="only3" />
-              </div>
-              <div>
-                <img src="./img/main/only4.png" alt="only4" />
-              </div>
-              <div>
-                <img src="./img/main/only5.png" alt="only5" />
+              <div class="slider_only">
+                <div class="slideonly1">
+                  <img src="./img/main/only1.png" alt="only1" />
+                </div>
+                <div class="slideonly2">
+                  <img src="./img/main/only2.png" alt="only2" />
+                </div>
+                <div class="slideonly3">
+                  <img src="./img/main/only3.png" alt="only3" />
+                </div>
+                <div class="slideonly4">
+                  <img src="./img/main/only4.png" alt="only4" />
+                </div>
+                <div class="slideonly5">
+                  <img src="./img/main/only5.png" alt="only5" />
+                </div>
+                <div class="slideonly1">
+                  <img src="./img/main/only1.png" alt="only1" />
+                </div>
+                <div class="slideonly2">
+                  <img src="./img/main/only2.png" alt="only2" />
+                </div>
+                <div class="slideonly3">
+                  <img src="./img/main/only3.png" alt="only3" />
+                </div>
+                <div class="slideonly4">
+                  <img src="./img/main/only4.png" alt="only4" />
+                </div>
+                <div class="slideonly5">
+                  <img src="./img/main/only5.png" alt="only5" />
+                </div>
               </div>
             </div>
           </div>

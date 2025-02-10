@@ -114,6 +114,7 @@
 .main_right {
   width: 683px;
   height: 100%;
+  z-index: 1000;
 }
 .graph-wrap {
   display: flex;
@@ -202,7 +203,38 @@
 
 /* =================================================================== */
 /* 첫번째 섹션 - hot track */
+/* 플로팅 버튼 */
 
+.main_sec1 .floating_btn_wrap {
+  display: block;
+}
+.main_sec1 .floating_btn {
+  /* border: 1px solid #fff; */
+  border: none;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  position: fixed;
+  top: 850px;
+  right: 80px;
+  z-index: 900;
+  box-shadow: 1px 1px 8px #9a9a9a;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+/*  */
+.main_sec1 .floating_btn:active {
+  /* border: 1px solid #ffcd34; */
+  background-color: #ffcd34;
+  box-sizing: border-box;
+}
+.main_sec1 .floating_btn > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .main_sec1 {
   width: 100%;
   height: auto;
@@ -358,6 +390,13 @@
   font-weight: 500;
 }
 
+.left_card_content > p {
+  cursor: pointer;
+  margin-top: 30px;
+  margin-left: 350px;
+  font-weight: 500;
+}
+
 /* ------------------------------------------- */
 /* 오른쪽 카드 */
 .right_card {
@@ -480,11 +519,18 @@
 }
 
 /* 오른쪽 카드 텍스트 - 예매율 폰트색 */
-.right_card_content .sm_text2 p > span {
+.right_card_content .sm_text2 span {
   color: #ffcd34;
   font-weight: 500;
 }
 
+.right_card_content > p {
+  cursor: pointer;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-left: 150px;
+  font-weight: 600;
+}
 /* 첫번째 섹션 - 전체보기 버튼 */
 .sec1_btn {
   width: fit-content;
@@ -569,8 +615,14 @@
   width: 48px;
   height: 48px;
   overflow: hidden;
-  background-color: #e4e4e4;
+  background-color: #ffffff;
   border-radius: 100%;
+}
+
+.user_box > div:nth-of-type(1) img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* 두번째섹션 - 리뷰글 */
@@ -637,20 +689,20 @@
   align-items: end;
 }
 
-.img_wrap > div:nth-of-type(1) {
+.img_wrap > .review_img_box1 {
   width: 640px;
   height: 640px;
   overflow: hidden;
   border-radius: 50px;
 }
 
-.img_wrap > div:nth-of-type(1) > img {
+.img_wrap > .review_img_box1 > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.img_wrap > div:nth-of-type(2) {
+.img_wrap > .review_img_box2 {
   width: 538px;
   height: 538px;
   border-radius: 50px;
@@ -753,8 +805,8 @@
 
 /* 세번째 섹션 - 오른쪽 영역 (이미지, 글, 그래프) */
 .content_right {
-  width: 1310px;
-  height: fit-content;
+  width: 100%;
+  height: auto;
 }
 
 .img_txt1 {
@@ -852,6 +904,7 @@
   text-align: center;
 }
 
+/* 세번째 섹션 전체보기 버튼 */
 .sec3_btn {
   width: fit-content;
   height: fit-content;
@@ -866,8 +919,8 @@
   border-radius: 6px;
   background-color: #fff;
   border: 1px solid #efefef;
-  font-weight: 400;
-  margin-top: 70px;
+  font-weight: 300;
+  margin-top: 50px;
   gap: 15px;
   transition: 0.2s;
 }
@@ -878,14 +931,17 @@
 }
 
 .sec3_btn > a > img {
-  padding-top: 2.5px;
+  transition: 0.2s;
+}
+.sec3_btn:hover > a > img {
+  transform: scale(1.1);
 }
 
 /* =================================================================== */
 /* 네번째 섹션- only track */
 .main_sec4 {
   width: 100%;
-  height: fit-content;
+  height: auto;
   overflow: hidden;
   padding-bottom: 300px;
 }
@@ -924,25 +980,55 @@
   color: #fff;
 }
 
-/* 네번째 섹션 - 공연 이미지박스 */
+/* 네번째 섹션 - 공연 이미지박스*/
 .sec4_img_wrap {
-  width: fit-content;
-  height: fit-content;
-  display: flex;
-  gap: 30px;
-  margin-bottom: 150px;
-}
-
-.sec4_img_wrap > div {
-  width: 230px;
+  left: 130px;
+  bottom: 60px;
+  width: 1270px;
   height: 330px;
   overflow: hidden;
-  border-radius: 20px;
+  position: relative;
 }
-.sec4_img_wrap > div > img {
+
+/* 공연이미지 박스 - 이미지전체 영역 */
+.sec4_img_wrap > .slider_only {
+  position: absolute;
+  height: 100%;
+  display: flex;
+  gap: 20px;
+  border-radius: 20px;
+  animation: slideonly 18s linear infinite forwards;
+}
+
+/* 슬라이드 효과 */
+@keyframes slideonly {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* 슬라이드 5개 이미지액자 크기  */
+.slideonly1,
+.slideonly2,
+.slideonly3,
+.slideonly4,
+.slideonly5 {
+  width: 230px;
+  height: 330px;
+}
+
+/* 슬라이드 5개 이미지  */
+.slider_only img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 20px;
+}
+.slider_only img:hover {
+  animation-play-state: ;
 }
 
 /* =================================================================== */
@@ -1007,19 +1093,18 @@
 }
 
 .icon_box p {
-  font-weight: 300;
+  font-weight: 400;
   color: #000;
-  transition: 0.2s;
+  transition: 0.3s;
   text-align: center;
 }
 
 /* 아이콘에 마우스를 올리면 */
 .icon_box:hover p {
   color: #ffcd34;
-  font-weight: 500;
 }
 
-/* 아래 2개 박스*/
+/* 아래 컨텐츠 2개 박스*/
 .sec5_bottom {
   width: 1462px;
   height: fit-content;
@@ -1150,4 +1235,8 @@
   justify-content: space-between;
   line-height: 70px;
   font-size: 18px;
+}
+
+.qna_content_box > div > div {
+  cursor: pointer;
 }

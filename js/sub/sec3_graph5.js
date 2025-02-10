@@ -1,11 +1,11 @@
-$(".circle-graph-sec3").each(function (index, node) {
+$(".circle-graph-sec3_4").each(function (index, node) {
   let perNum = $(this).attr("circleProgress");
-  let fillColors = ["#ffb935", "#5e51f3"]; // 그래프의 색상 배열
+  let fillColors = ["#CCD4DC", "#5e51f3"]; // 그래프의 색상 배열
   let fillColor = fillColors[index];
 
   $(this).circleProgress({
     size: 150, // 그래프 크기
-    value: perNum / 90, // 그래프에 표시될 값
+    value: perNum / 70, // 그래프에 표시될 값
     startAngle: 300, // 시작지점
     thickness: 25, // 그래프 두께
     fill: {
