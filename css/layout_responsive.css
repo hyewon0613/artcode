@@ -1,0 +1,25 @@
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+}
+
+.main_visual {
+  padding: 200px 20px;
+  width: 100%;
+  height: auto;
+}
+
+.main_wrap {
+  width: 111%;
+}
+
+.main_left {
+  width: 102%;
+}
+
+.main_sec1,
+.main_sec2,
+.main_sec3,
+.main_sec4,
+.main_sec5,
+footer {
+  display: none;
+}

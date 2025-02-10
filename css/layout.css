@@ -5,7 +5,8 @@
 
 /*메인 전체 영역*/
 .main_visual {
-  padding: 200px 0;
+  padding: 0;
+  padding: 200px 20px;
   width: 100%;
   height: auto;
 }
@@ -216,8 +217,8 @@
   height: 60px;
   overflow: hidden;
   position: fixed;
-  top: 850px;
-  right: 80px;
+  top: 835px;
+  right: 100px;
   z-index: 900;
   box-shadow: 1px 1px 8px #9a9a9a;
   transition: 0.2s;
@@ -997,7 +998,7 @@
   display: flex;
   gap: 20px;
   border-radius: 20px;
-  animation: slideonly 18s linear infinite forwards;
+  animation: slideonly 12s linear infinite forwards;
 }
 
 /* 슬라이드 효과 */
@@ -1190,6 +1191,7 @@
 .ai_content p:nth-child(3) {
   font-size: 14px;
   line-height: 80px;
+  font-weight: 500;
 }
 
 /* 오른쪽 박스 */
@@ -1222,6 +1224,10 @@
 .qna_title_box img {
   width: 35px;
   height: 35px;
+  transition: 0.2s;
+}
+.sec5_bottom_right:hover .qna_title_box img {
+  transform: scale(1.2);
 }
 
 /* 질문 3개 박스 */
