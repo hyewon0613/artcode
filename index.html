@@ -71,14 +71,16 @@
             <!-- 메인 왼쪽 영역 -->
             <div class="main_left">
               <!-- 이미지 영역 -->
-              <div class="main_image">
-                <img src="./img/main/main.png" alt="main main visual" />
-              </div>
-              <div class="main_image">
-                <img src="./img/main/record.png" alt="record" />
-              </div>
-              <div class="main_image">
-                <img src="./img/main/record pin.png" alt="record pin" />
+              <div class="main_image_wrap">
+                <div class="main_image">
+                  <img src="./img/main/main.png" alt="main main visual" />
+                </div>
+                <div class="main_image">
+                  <img src="./img/main/record.png" alt="record" />
+                </div>
+                <div class="main_image">
+                  <img src="./img/main/record pin.png" alt="record pin" />
+                </div>
               </div>
               <!-- 텍스트 영역 -->
               <div class="main_text">
@@ -113,7 +115,7 @@
               <!-- 아래 컨텐츠 영역 -->
               <div class="swiper">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">
+                  <div class="swiper-slide info_banner">
                     <div>
                       <img
                         src="./img/icon/yellow security button.png"
@@ -125,7 +127,7 @@
                       <p>모든 거래는 이중인증을 진행하고 있어요.</p>
                     </div>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide info_banner">
                     <div>
                       <img src="./img/icon/gift.png" alt="이벤트 정보 아이콘" />
                     </div>
@@ -134,7 +136,7 @@
                       <p>실시간으로 올라오는 이벤트를 확인하세요.</p>
                     </div>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide info_banner">
                     <div>
                       <img
                         src="./img/icon/artcodeonly.png"
@@ -996,7 +998,7 @@
         </div>
       </footer>
     </div>
-    <script src="./js/main.sm.js"></script>
+    <script src="./js/main_sm.js"></script>
     <script>
       AOS.init();
     </script>
