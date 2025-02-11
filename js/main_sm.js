@@ -21,7 +21,7 @@ const swiper = new Swiper(".swiper", {
     el: ".swiper-scrollbar",
   },
 
-  autoplay: {
-    delay: 3000,
-  },
+  // autoplay: {
+  //   delay: 3000,
+  // },
 });
