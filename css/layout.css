@@ -790,21 +790,28 @@ main {
   width: 160px;
   height: 792px;
   margin-right: 60px;
+  border-left: 2px solid #949494;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .region_box {
-  line-height: 100px;
-  border-left: 2px solid #949494;
-  padding-left: 15px;
+  width: fit-content;
+  padding: 8px 12px;
+  border-radius: 20px;
   cursor: pointer;
   transition: 0.3s;
+  box-sizing: border-box;
+  margin-left: 10px;
 }
 .region_box p {
   font-size: 20px;
-  font-weight: 400;
-  color: #7c7c7c;
+  font-weight: 500;
+  color: #000;
 }
-.region_box > p::before {
+/* .region_box > p::before {
   width: 20px;
   height: 2px;
   background-color: #fff;
@@ -812,9 +819,9 @@ main {
   content: "";
   margin-right: 8px;
   margin-bottom: 8px;
-}
+} */
 
-.region_box:hover > p::before {
+/* .region_box:hover > p::before {
   width: 20px;
   height: 2px;
   background-color: #949494;
@@ -822,16 +829,14 @@ main {
   content: "";
   margin-right: 8px;
   margin-bottom: 8px;
-}
-.region_box:hover {
+} */
+/* .region_box:hover {
   padding: 0;
-}
+} */
 
 /* 지역키워드에 마우스를 올리면 */
-.region_box:hover p {
-  color: #ffcd34;
-  font-size: 24px;
-  font-weight: 600;
+.region_box:hover {
+  background-color: #ffcd34;
 }
 
 /* 세번째 섹션 - 오른쪽 영역 (이미지, 글, 그래프) */
