@@ -1,0 +1,601 @@
+@charset "utf-8";
+@import url("./common_responsive.css");
+
+/* ================================================================= 
+    큰 노트북 ----------------------------------------------------- */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  /* 첫번쨰 섹션--------------------------------------------------- */
+  /* 첫번째 섹션 */
+  .sub1_sec1 {
+    height: 600px;
+    background-size: 100%;
+    background-position: 0;
+    background-attachment: fixed;
+  }
+
+  /* 두번쨰 섹션--------------------------------------------------- */
+  .sec2_box_wrap {
+    width: 96%;
+    justify-content: space-around;
+  }
+
+  /* 세번째 섹션--------------------------------------------------- */
+  .history_left p {
+    font-size: clamp(28px, 3vw, 38px);
+  }
+  .history1 {
+    margin-bottom: 30px;
+  }
+  .history2 {
+    margin-bottom: 30px;
+  }
+  .history3 {
+    margin-bottom: 30px;
+  }
+  .history1 > p {
+    font-size: clamp(28px, 3vw, 38px);
+  }
+  .history2 > p {
+    font-size: clamp(28px, 3vw, 38px);
+  }
+  .history3 > p {
+    font-size: clamp(28px, 3vw, 38px);
+  }
+  .history1_wrap_right p {
+    font-size: clamp(20px, 1.8vw, 26px);
+  }
+  .history2_wrap_right p {
+    font-size: clamp(20px, 1.8vw, 26px);
+  }
+  .history3_wrap_right p {
+    font-size: clamp(20px, 1.8vw, 26px);
+  }
+
+  /* 네번째 섹션--------------------------------------------------- */
+  .sub1_sec4_con {
+    width: 100%;
+  }
+}
+/* ================================================================= 
+    작은 노트북 ----------------------------------------------------- */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* 첫번째 섹션--------------------------------------------------- */
+  .sub1_sec1 {
+    height: 500px;
+    background-size: 120%;
+    background-position: 0;
+    background-attachment: fixed;
+  }
+  .sec1_text_wrap > h2 {
+    font-size: 48px;
+  }
+
+  /* 두번째 섹션--------------------------------------------------- */
+  .sec2_box_wrap {
+    width: 95%;
+    padding: 0 20px;
+  }
+  .sub1_sec2_con {
+    width: 100%;
+    height: 100%;
+    background-color: #332f2d;
+    margin-top: 250px;
+  }
+
+  .number_left {
+    width: 44%;
+    height: 470px;
+    margin-top: 0;
+    padding: 40px 0px;
+  }
+  .number_left > .number1 {
+    padding: 25px 20px;
+  }
+  .number_left > .number2 {
+    padding: 25px 20px;
+  }
+  .number_left > .number3 {
+    padding: 25px 20px;
+  }
+
+  .number_right div {
+    font-size: clamp(22px, 2.8vw, 30px);
+  }
+  .number_right > p:nth-of-type(1) {
+    font-size: clamp(22px, 2.8vw, 30px);
+  }
+  .number_right > p:nth-of-type(2) {
+    font-size: clamp(16px, 1.8vw, 25px);
+    margin-top: 5px;
+  }
+  .number_left > .number1 p:first-child {
+    font-size: clamp(20px, 3vw, 28px);
+  }
+  .number_left > .number1 p:nth-child(2) {
+    font-size: clamp(20px, 3vw, 24px);
+    line-height: 40px;
+  }
+  .number_left > .number2 p:first-child {
+    font-size: clamp(20px, 3vw, 28px);
+  }
+  .number_left > .number2 p:nth-child(2) {
+    font-size: clamp(20px, 3vw, 24px);
+    line-height: 40px;
+  }
+  .number_left > .number3 p:first-child {
+    font-size: clamp(20px, 3vw, 28px);
+  }
+  .number_left > .number3 p:nth-child(2) {
+    font-size: clamp(20px, 3vw, 24px);
+    line-height: 40px;
+  }
+  /* 세번째 섹션--------------------------------------------------- */
+  .sub1_sec3_con {
+    height: 1000px;
+    margin-bottom: 200px;
+  }
+  .history {
+    padding: 55px 0;
+  }
+  /* 아트코드는 다양한 서비스로~~  */
+  .history_left p {
+    font-size: clamp(24px, 3vw, 38px);
+    line-height: 40px;
+  }
+
+  .history_left {
+    width: 40%;
+  }
+  .history_right {
+    width: 54%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  /* 오른쪽 2024년---------------------------- */
+
+  .history1 {
+    margin-bottom: 10px;
+    margin-bottom: clamp(20px, 4vw, 40px);
+  }
+  .history1 > p {
+    font-size: clamp(28px, 3vw, 38px);
+  }
+  .history1_wrap {
+    display: flex;
+    gap: 24px;
+  }
+  .history1_wrap_left p {
+    font-size: clamp(20px, 2vw, 28px);
+    line-height: 70px;
+  }
+  .history1_wrap_left {
+    margin-left: 11px;
+  }
+  .history1_wrap_right p {
+    font-size: clamp(20px, 1.8vw, 26px);
+  }
+  /* 오른쪽 2023년--------------------------- */
+  .history2 {
+    margin-bottom: 10px;
+    margin-bottom: clamp(20px, 4vw, 40px);
+  }
+  .history2 > p {
+    font-size: clamp(28px, 3vw, 38px);
+  }
+  .history2_wrap {
+    display: flex;
+    gap: 24px;
+  }
+  .history2_wrap_left p {
+    font-size: clamp(20px, 2vw, 28px);
+    line-height: 70px;
+  }
+  .history2_wrap_left {
+    margin-left: 11px;
+  }
+  .history2_wrap_right p {
+    font-size: clamp(20px, 1.8vw, 26px);
+  }
+  /* 오른쪽 2022년------------------------- */
+  .history3 {
+    margin-bottom: 10px;
+    margin-bottom: clamp(20px, 4vw, 40px);
+  }
+  .history3 > p {
+    font-size: clamp(28px, 3vw, 38px);
+  }
+  .history3_wrap {
+    display: flex;
+    gap: 24px;
+  }
+  .history3_wrap_left p {
+    font-size: clamp(20px, 2vw, 28px);
+    line-height: 70px;
+  }
+  .history3_wrap_left {
+    margin-left: 11px;
+  }
+  .history3_wrap_right p {
+    font-size: clamp(20px, 1.8vw, 26px);
+  }
+
+  /* 네번째 섹션--------------------------------------------------- */
+  .sub1_sec4 {
+    width: 100%;
+  }
+  .sub1_sec4_con {
+    width: 95%;
+  }
+  .service_bottom {
+    gap: 20px;
+  }
+  .service_bottom .service_box {
+    width: 250px;
+    height: 250px;
+  }
+  .service_box p:nth-of-type(1) {
+    font-size: clamp(20px, 2vw, 28px);
+    line-height: 60px;
+  }
+
+  .service_box p:nth-of-type(2) {
+    font-size: clamp(18px, 2vw, 24px);
+    text-align: center;
+  }
+}
+/* ================================================================= 
+    테블릿 ----------------------------------------------------- */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /* 첫번째 섹션------------------------- */
+  .sub1_sec1 {
+    height: 500px;
+    background-size: cover;
+    background-position: 0;
+    background-attachment: fixed;
+  }
+
+  .sec1_text_wrap > h2 {
+    font-size: clamp(36px, 6vw, 48px);
+  }
+  .sec1_text_box {
+    font-size: clamp(16px, 3vw, 25px);
+  }
+
+  /* 두번째 섹션------------------------- */
+  .sec2_box_wrap {
+    width: 95%;
+    padding: 30px 0;
+    flex-direction: column-reverse;
+  }
+  .sub1_sec2_con {
+    width: 100%;
+    height: 100%;
+    background-color: #332f2d;
+    margin-top: 250px;
+  }
+
+  .number_left {
+    width: 70%;
+    height: 470px;
+  }
+  .number_left > .number1 {
+    padding: 25px 20px;
+  }
+  .number_left > .number2 {
+    padding: 25px 20px;
+  }
+  .number_left > .number3 {
+    padding: 25px 20px;
+  }
+  .number_right {
+    line-height: clamp(20px, 4vw, 32px);
+    text-align: center;
+  }
+  .number_right div {
+    font-size: clamp(22px, 4vw, 33px);
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+  .number_right > p:nth-of-type(1) {
+    font-size: clamp(22px, 4vw, 28px);
+    margin-bottom: 24px;
+  }
+  .number_right > p:nth-of-type(2) {
+    font-size: clamp(16px, 1.8vw, 25px);
+    margin-top: 5px;
+  }
+  .number_left > .number1 p:first-child {
+    font-size: clamp(20px, 3vw, 28px);
+  }
+  .number_left > .number1 p:nth-child(2) {
+    font-size: clamp(20px, 3vw, 24px);
+    line-height: 40px;
+  }
+  .number_left > .number2 p:first-child {
+    font-size: clamp(20px, 3vw, 28px);
+  }
+  .number_left > .number2 p:nth-child(2) {
+    font-size: clamp(20px, 3vw, 24px);
+    line-height: 40px;
+  }
+  .number_left > .number3 p:first-child {
+    font-size: clamp(20px, 3vw, 28px);
+  }
+  .number_left > .number3 p:nth-child(2) {
+    font-size: clamp(20px, 3vw, 24px);
+    line-height: 40px;
+  }
+  /* 세번째 섹션------------------------- */
+  .sub1_sec3_con {
+    height: 800px;
+    margin-bottom: 500px;
+    display: block;
+  }
+  .history {
+    position: unset;
+    text-align: center;
+    padding-top: 60px;
+    margin: 0 auto;
+  }
+  /* 아트코드는 다양한 서비스로~~  */
+  .history_left p {
+    font-size: clamp(24px, 4vw, 40px);
+    line-height: 50px;
+  }
+
+  .history_left {
+    width: 100%;
+    height: 340px;
+    margin: 0px auto;
+  }
+  .history_right {
+    height: 100%;
+
+    align-items: center;
+  }
+
+  /* 오른쪽 2024년---------------------------- */
+
+  .history1 {
+    margin-bottom: 10px;
+    margin-bottom: clamp(20px, 4vw, 40px);
+  }
+  .history1 > p {
+    font-size: clamp(28px, 3vw, 38px);
+  }
+  .history1_wrap {
+    display: flex;
+    gap: 24px;
+  }
+  .history1_wrap_left p {
+    font-size: clamp(20px, 2vw, 28px);
+    line-height: 70px;
+  }
+  .history1_wrap_left {
+    margin-left: 11px;
+  }
+  .history1_wrap_right p {
+    font-size: clamp(20px, 1.8vw, 26px);
+  }
+  /* 오른쪽 2023년--------------------------- */
+  .history2 {
+    margin-bottom: 10px;
+    margin-bottom: clamp(20px, 4vw, 40px);
+  }
+  .history2 > p {
+    font-size: clamp(28px, 3vw, 38px);
+  }
+  .history2_wrap {
+    display: flex;
+    gap: 24px;
+  }
+  .history2_wrap_left p {
+    font-size: clamp(20px, 2vw, 28px);
+    line-height: 70px;
+  }
+  .history2_wrap_left {
+    margin-left: 11px;
+  }
+  .history2_wrap_right p {
+    font-size: clamp(20px, 1.8vw, 26px);
+  }
+  /* 오른쪽 2022년------------------------- */
+  .history3 {
+    margin-bottom: 10px;
+    margin-bottom: clamp(20px, 4vw, 40px);
+  }
+  .history3 > p {
+    font-size: clamp(28px, 3vw, 38px);
+  }
+  .history3_wrap {
+    display: flex;
+    gap: 24px;
+  }
+  .history3_wrap_left p {
+    font-size: clamp(20px, 2vw, 28px);
+    line-height: 70px;
+  }
+  .history3_wrap_left {
+    margin-left: 11px;
+  }
+  .history3_wrap_right p {
+    font-size: clamp(20px, 1.8vw, 26px);
+  }
+
+  /* 네번째 섹션------------------------- */
+  .sub1_sec4 {
+    width: 100%;
+  }
+  .sub1_sec4_con {
+    width: 95%;
+  }
+  .service_bottom {
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .service_bottom .service_box {
+    width: 300px;
+    height: 200px;
+  }
+  .service_box p:nth-of-type(1) {
+    font-size: clamp(20px, 2vw, 28px);
+    line-height: 60px;
+  }
+
+  .service_box p:nth-of-type(2) {
+    font-size: clamp(18px, 2vw, 24px);
+    text-align: center;
+  }
+
+  footer {
+    display: none;
+  }
+}
+/* ================================================================= 
+    모바일 ----------------------------------------------------- */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  /* 첫번째 섹션------------------------- */
+  .sub1_sec1 {
+    height: 200px;
+    background-size: cover;
+    background-position: 0;
+    background-attachment: fixed;
+  }
+
+  .sec1_text_wrap > h2 {
+    font-size: clamp(36px, 6vw, 48px);
+  }
+  .sec1_text_box {
+    font-size: clamp(16px, 3vw, 25px);
+  }
+
+  /* 두번째 섹션------------------------- */
+  .sec2_box_wrap {
+    width: 95%;
+    padding: 30px 0;
+    flex-direction: column-reverse;
+  }
+  .sub1_sec2_con {
+    width: 100%;
+    height: 100%;
+    background-color: #332f2d;
+    margin-top: 100px;
+  }
+  .number1 div:nth-child(2) {
+    height: auto;
+    width: 56px;
+  }
+  .number2 div:nth-child(2) {
+    height: auto;
+    width: 50px;
+  }
+  .number3 div:nth-child(2) {
+    height: auto;
+    width: 5cqb;
+  }
+
+  .number_left {
+    width: 280px;
+    height: 320px;
+  }
+  .number_left > .number1 {
+    padding: 12px 12px;
+  }
+  .number_left > .number2 {
+    padding: 12px 12px;
+  }
+  .number_left > .number3 {
+    padding: 12px 12px;
+  }
+  .number_right {
+    line-height: clamp(20px, 4vw, 32px);
+    text-align: center;
+  }
+  .number_right div {
+    font-size: clamp(22px, 4vw, 33px);
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+  .number_right > p:nth-of-type(1) {
+    font-size: clamp(22px, 4vw, 28px);
+    margin-bottom: 24px;
+  }
+  .number_right > p:nth-of-type(2) {
+    font-size: clamp(15px, 1.8vw, 25px);
+    margin-top: 5px;
+  }
+  .number_left > .number1 p:first-child {
+    font-size: clamp(16px, 2vw, 26px);
+    font-weight: 500;
+  }
+  .number_left > .number1 p:nth-child(2) {
+    font-size: clamp(16px, 2vw, 26px);
+    line-height: 40px;
+  }
+  .number_left > .number2 p:first-child {
+    font-size: clamp(16px, 2vw, 26px);
+    font-weight: 500;
+  }
+  .number_left > .number2 p:nth-child(2) {
+    font-size: clamp(16px, 2vw, 26px);
+    line-height: 40px;
+  }
+  .number_left > .number3 p:first-child {
+    font-size: clamp(16px, 2vw, 26px);
+    font-weight: 500;
+  }
+  .number_left > .number3 p:nth-child(2) {
+    font-size: clamp(16px, 2vw, 26px);
+    line-height: 40px;
+  }
+
+  /* 세번째 섹션------------------------- */
+  .sub1_sec3 {
+    display: none;
+  }
+
+  /* 네번째 섹션------------------------- */
+  .sub1_sec4 {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .sub1_sec4_con {
+    width: 95%;
+    margin: 100px auto;
+  }
+  .service_top {
+    margin-bottom: 40px;
+  }
+  .service_top p {
+    font-size: clamp(24px, 2vw, 20px);
+  }
+  .service_bottom {
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .service_bottom .service_box {
+    width: 250px;
+    height: 200px;
+  }
+  .service_box p:nth-of-type(1) {
+    font-size: clamp(20px, 2vw, 28px);
+    line-height: 60px;
+  }
+
+  .service_box p:nth-of-type(2) {
+    font-size: clamp(18px, 2vw, 24px);
+    text-align: center;
+  }
+
+  footer {
+  }
+}
