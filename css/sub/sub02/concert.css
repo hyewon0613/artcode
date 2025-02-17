@@ -87,6 +87,20 @@
 
 .swiper_mySwiper .swiper-slide {
   width: 450px;
+  margin-right: 30px;
+  height: fit-content;
+  text-align: center;
+}
+.swiper-slide .swiper-slide-active {
+  width: 450px;
+  margin-right: 30px;
+  height: fit-content;
+  text-align: center;
+}
+
+.swiper-slide .swiper-slide-next {
+  width: 450px;
+  margin-right: 30px;
   height: fit-content;
   text-align: center;
 }
