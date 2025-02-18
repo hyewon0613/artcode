@@ -373,7 +373,9 @@
   display: flex;
   justify-content: space-between;
 }
-
+.event_box {
+  width: auto;
+}
 .event_box div:nth-child(1) {
   margin-bottom: 30px;
 }
@@ -384,7 +386,9 @@
   overflow: hidden;
   border-radius: 20px;
 }
-
+.event_box div:nth-child(2) {
+  width: auto;
+}
 .event_box div:first-child img {
   width: 100%;
   height: 100%;
