@@ -1,10 +1,10 @@
-const swiper = new Swiper(".swiper_mySwiper", {
+const swiper = new Swiper(".swiper_meSwiper", {
   // Optional parameters
   direction: "horizontal",
   loop: true,
   slidesPerView: 4,
   slideToClickedSlide: true,
-  spaceBetween: 30,
+  spaceBetween: 50,
   freeMode: true,
   slidesOffsetBefore: 1,
 
@@ -28,7 +28,7 @@ const swiper = new Swiper(".swiper_mySwiper", {
   breakpoints: {
     1440: {
       slidesPerView: 4,
-      spaceBetween: 40,
+      spaceBetween: 60,
     },
 
     1025: {
@@ -52,7 +52,7 @@ const swiper = new Swiper(".swiper_mySwiper", {
 
     481: {
       slidesPerView: 2,
-      spaceBetween: 10,
+      spaceBetween: 20,
     },
 
     480: {
