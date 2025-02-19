@@ -19,10 +19,10 @@ const swiper = new Swiper(".swiper_meSwiper", {
     el: ".swiper-scrollbar",
   },
 
-  // autoplay: {
-  //   delay: 1000,
-  //   duration: 3500,
-  // },
+  autoplay: {
+    delay: 1500,
+    duration: 3500,
+  },
 
   //slidepreview
   breakpoints: {

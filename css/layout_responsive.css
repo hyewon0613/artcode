@@ -162,6 +162,10 @@
   .main_sec1_con .track_box {
     margin-bottom: 60px;
   }
+  .track_box img {
+    width: 65px;
+    height: 65px;
+  }
 
   .hot_txt p:first-child {
     font-size: 18px;

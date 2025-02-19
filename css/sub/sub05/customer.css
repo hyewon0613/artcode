@@ -224,7 +224,6 @@
   width: 500px;
   height: fit-content;
 }
-
 .customer_content_top h2 {
   text-align: center;
   font-weight: 500;
@@ -274,7 +273,9 @@
   height: fit-content;
   margin-top: 100px;
 }
-
+.cutomer_wrap2_box {
+  width: 100%;
+}
 /* 티켓 안내 - 제목 */
 .customer_wrap2 h2 {
   font-size: 28px;
@@ -307,6 +308,10 @@
   width: 100%;
   height: fit-content;
   margin-top: 100px;
+}
+
+.customer_wrap3_box {
+  width: 100%;
 }
 
 .customer_wrap3 > h2 {
