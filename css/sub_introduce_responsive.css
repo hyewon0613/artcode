@@ -1,15 +1,35 @@
 @charset "utf-8";
 @import url("./common_responsive.css");
+/* ================================================================= 
+    pc ----------------------------------------------------- */
+@media screen and (min-width: 1441px) {
+  /* 첫번쨰 섹션--------------------------------------------------- */
+  .con {
+    width: 90%;
+  }
+  .sub1_sec1 {
+    background-position: -200px -8vw;
+  }
+  /* 두번쨰 섹션--------------------------------------------------- */
 
+  .sec2_box_wrap {
+    width: 90%;
+    justify-content: space-between;
+  }
+  /* 네번쨰 섹션--------------------------------------------------- */
+  .sub1_sec4_con {
+    width: 90%;
+  }
+}
 /* ================================================================= 
     큰 노트북 ----------------------------------------------------- */
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
   /* 첫번쨰 섹션--------------------------------------------------- */
   .sub1_sec1 {
     height: 600px;
-    background-size: 100%;
     background-position: 0;
     background-attachment: fixed;
+    background-position: -200px -8vw;
   }
   .sec1_text_wrap {
     text-align: center;
@@ -63,10 +83,12 @@
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   /* 첫번째 섹션--------------------------------------------------- */
   .sub1_sec1 {
-    height: 500px;
-    background-size: 120%;
-    background-position: center;
+    height: 600px;
+    background-position: 0;
     background-attachment: fixed;
+    background-position: -210px -2vw;
+    background-size: 134%;
+    padding-bottom: 0;
   }
   .sec1_text_wrap > h2 {
     font-size: 48px;
@@ -258,10 +280,12 @@
 @media screen and (min-width: 481px) and (max-width: 768px) {
   /* 첫번째 섹션------------------------- */
   .sub1_sec1 {
-    height: 500px;
-    background-size: cover;
-    background-position: center;
+    height: 700px;
+    background-position: 0;
     background-attachment: fixed;
+    background-position: -230px 9vw;
+    background-size: 170%;
+    padding-bottom: 0;
   }
 
   .sec1_text_wrap > h2 {
@@ -272,7 +296,7 @@
   }
   .sec1_text_wrap {
     text-align: center;
-    margin-top: 200px;
+    margin-top: 30vw;
   }
   /* 두번째 섹션------------------------- */
   .sec2_box_wrap {
@@ -475,6 +499,7 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    background-position: -1090px -144vw;
   }
 
   .sec1_text_wrap > h2 {

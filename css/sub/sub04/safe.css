@@ -323,11 +323,11 @@ body {
   align-items: center;
   gap: 40px;
   margin-top: 70px;
-  animation: slidebottom 14s linear infinite;
+  animation: slidebottom 16s linear infinite;
 }
 @keyframes slidebottom {
   0% {
-    transform: translateX(-50%);
+    transform: translateX(-30%);
   }
   100% {
     transform: translateX(30%);
