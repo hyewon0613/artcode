@@ -2,6 +2,25 @@
 @import url("./reset.css");
 @import url("./common.css");
 
+/* =================================================================== */
+/* 플로팅 버튼 */
+.floating_btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 15px;
+  background-color: #fff;
+  transition: 0.3s;
+}
+/* 플로팅버튼 마우스올리면 */
+.floating_btn:hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
 /*메인 전체 영역*/
 main {
   width: 100%;
@@ -186,6 +205,7 @@ main {
   justify-content: center;
   align-items: center;
   gap: 40px;
+  z-index: 200;
 }
 
 .swiper-wrapper {
@@ -227,7 +247,6 @@ main {
   height: auto;
 }
 
-/* =================================================================== */
 /* 첫번째 섹션 - hot track */
 .main_sec1 {
   width: 100%;

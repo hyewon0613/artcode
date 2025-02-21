@@ -20,8 +20,8 @@ const swiper = new Swiper(".swiper_mySwiper", {
   },
 
   autoplay: {
-    delay: 1000,
-    duration: 3500,
+    delay: 1500,
+    duration: 4000,
   },
 
   //slidepreview

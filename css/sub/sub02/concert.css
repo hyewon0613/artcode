@@ -1,7 +1,19 @@
 @charset "utf-8";
 @import url("../../reset.css");
 @import url("../../common.css");
-
+/* =================================================================== */
+/* 위로 올라가는 플로팅 버튼 */
+.floating_btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
 /* 첫번째 섹션 - 베스트 랭킹 */
 .sub2_sec1 {
   padding: 200px 0;
@@ -345,6 +357,7 @@
 }
 .sec3_card div img {
   transition: 0.5s;
+  cursor: pointer;
 }
 .sec3_card div img:hover {
   transform: scale(1.1);

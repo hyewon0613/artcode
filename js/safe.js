@@ -21,7 +21,7 @@ const swiper = new Swiper(".swiper_meSwiper", {
 
   autoplay: {
     delay: 1500,
-    duration: 3500,
+    duration: 4000,
   },
 
   //slidepreview
