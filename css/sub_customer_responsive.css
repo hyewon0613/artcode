@@ -352,6 +352,10 @@
 /* ================================================================= 
     모바일 ----------------------------------------------------- */
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .floating_btn {
+    width: 40px;
+    height: 40px;
+  }
   .sub5_sec1 {
     padding: 140px 0;
     padding-bottom: 150px;

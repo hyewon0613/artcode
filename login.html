@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인/회원가입 페이지</title>
+    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" href="./css/login_responsive.css" />
+  </head>
+  <body>
+    <header>
+      <!-- 헤더 -->
+      <div class="con">
+        <!-- 로고 -->
+        <h1>
+          <a href="/">
+            <img src="./img/icon/logo.svg" alt="logo" />
+          </a>
+        </h1>
+        <!-- 메뉴 -->
+        <nav id="gnb">
+          <ul>
+            <li>
+              <a href="./sub/sub01/introduce.html">아트코드 소개</a>
+            </li>
+            <li>
+              <a href="./sub/sub02/concert.html">공연 | 전시</a>
+            </li>
+            <li>
+              <a href="./sub/sub03/event.html">이벤트 | 행사</a>
+            </li>
+            <li>
+              <a href="./sub/sub04/safe.html">안심거래</a>
+            </li>
+            <li>
+              <a href="./sub/sub05/customer.html">고객센터</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- 아이콘 -->
+        <div class="icons">
+          <div class="search">
+            <a href="#">
+              <img src="./img/icon/search.svg" alt="search" />
+            </a>
+          </div>
+          <div class="mypage">
+            <a href="./login.html">
+              <img src="./img/icon/user.svg" alt="mypage" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div id="loginForm" class="form active">
+        <h2>로그인</h2>
+        <input type="text" placeholder="아이디를 입력해주세요." /><br />
+        <input type="password" placeholder="비밀번호를 입력해주세요." /><br />
+        <button>로그인</button>
+        <div class="no_id">
+          <p>아이디 찾기</p>
+          <p>비밀번호 찾기</p>
+        </div>
+      </div>
+
+      <div id="signupForm" class="form">
+        <h2>회원가입</h2>
+        <input type="text" placeholder="아이디를 입력해주세요." /><br />
+        <input type="email" placeholder="이메일를 입력해주세요." /><br />
+        <input type="password" placeholder="비밀번호를 입력해주세요." /><br />
+        <button>가입하기</button>
+      </div>
+
+      <div class="btn-group">
+        <button class="btn active" id="loginBtn">간편 로그인</button>
+        <button class="btn" id="signupBtn">회원가입</button>
+      </div>
+
+      <div class="logo_wrap">
+        <div class="naver_logo">
+          <a
+            href="https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/"
+            ><img src="./img/icon/naver_logo.png" alt="네이버 로고"
+          /></a>
+        </div>
+        <div class="kakao_logo">
+          <a href=""
+            ><img src="./img/icon/kakao_logo.webp" alt="카카오 로고"
+          /></a>
+        </div>
+        <div class="google_logo">
+          <a
+            href="https://accounts.google.com/v3/signin/identifier?elo=1&ifkv=ASSHykpuFbOjl8NqtHblypYK40fSc8rTIwh80KrTonltV065gECw9HwXEEufFpA4ioLRws7_hP_m_A&ddm=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin&continue=https%3A%2F%2Faccounts.google.com%2FManageAccount%3Fnc%3D1"
+            ><img src="./img/icon/google_logo.webp" alt="구글 로고"
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const loginBtn = document.getElementById("loginBtn");
+      const signupBtn = document.getElementById("signupBtn");
+      const loginForm = document.getElementById("loginForm");
+      const signupForm = document.getElementById("signupForm");
+
+      loginBtn.addEventListener("click", () => {
+        loginForm.classList.add("active");
+        signupForm.classList.remove("active");
+        loginBtn.classList.add("active");
+        signupBtn.classList.remove("active");
+      });
+
+      signupBtn.addEventListener("click", () => {
+        signupForm.classList.add("active");
+        loginForm.classList.remove("active");
+        signupBtn.classList.add("active");
+        loginBtn.classList.remove("active");
+      });
+    </script>
+  </body>
+</html>

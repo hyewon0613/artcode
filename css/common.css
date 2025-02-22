@@ -104,7 +104,46 @@ h1 img {
   align-items: center;
   gap: 30px;
 }
-
+.menu_btn {
+  width: 20px;
+  height: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+}
+.bar {
+  width: 100%;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #000;
+  transition: 0.3s;
+}
+.menu_btn.active .bar:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+.menu_btn.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.menu_btn.active .bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+.all_menu {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(50, 50, 50, 0.2);
+  position: fixed;
+  right: 0;
+  top: 80px;
+  transform: translateX(200%);
+  transition: right 0.3s ease;
+  padding: 20px 0;
+  transition: 0.5s;
+}
+.all_menu.open {
+  transform: translateX(0);
+}
 .icons div {
   transition: 0.3s;
 }

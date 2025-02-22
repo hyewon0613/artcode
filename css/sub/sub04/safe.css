@@ -361,7 +361,8 @@ body {
 
 /* 프로필 일러스트 */
 .topbox_num1 div:nth-child(1) {
-  width: 100px;
+  margin-left: 10px;
+  width: 87px;
   height: 80px;
 }
 .topbox_num1 div:nth-child(1) img {

@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url("./common_responsive.css");
 /* ================================================================= 
     pc ----------------------------------------------------- */
 @media screen and (min-width: 1441px) {
@@ -917,26 +918,6 @@
 /* ================================================================= 
     테블릿 ----------------------------------------------------- */
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  /* 헤더 */
-  header {
-    height: 80px;
-  }
-  .con {
-    width: 95%;
-    justify-content: space-between;
-  }
-  h1 {
-    width: 100px;
-  }
-
-  #gnb > ul {
-    display: none;
-  }
-
-  #gnb > ul > li > a {
-    font-size: 9px;
-  }
-
   /* 메인 비주얼 */
   .main_visual {
     padding: 120px 0;
@@ -1674,7 +1655,7 @@
     height: 80px;
   }
   .con {
-    width: 95%;
+    width: 90%;
     justify-content: space-between;
   }
   h1 {
@@ -1688,7 +1669,10 @@
   #gnb > ul > li > a {
     font-size: 9px;
   }
-
+  .floating_btn {
+    width: 40px;
+    height: 40px;
+  }
   /* 메인 비주얼 */
   .main_visual {
     padding: 0;
@@ -1842,7 +1826,7 @@
   .main_sec1 {
     width: 100%;
     height: auto;
-    padding-bottom: 150px;
+    padding-bottom: 90px;
   }
   .main_sec1_con {
     width: 95%;
@@ -1853,16 +1837,16 @@
   }
 
   .track_box img {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
   }
 
   .hot_txt p:first-child {
-    font-size: 8px;
+    font-size: 12px;
     margin-bottom: 3px;
   }
   .hot_txt p:nth-child(2) {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .track_show {
@@ -2020,12 +2004,12 @@
     margin: 0 auto;
   }
   .review_txt p:first-child {
-    font-size: 8px;
+    font-size: 12px;
     margin-bottom: 3px;
   }
 
   .review_txt p:nth-child(2) {
-    font-size: 16px;
+    font-size: 20px;
   }
   .text_wrap > .track_box {
     margin-bottom: 30px;
@@ -2137,11 +2121,11 @@
   }
 
   .tosell_txt p:first-child {
-    font-size: 8px;
+    font-size: 12px;
     margin-bottom: 3px;
   }
   .tosell_txt p:nth-child(2) {
-    font-size: 16px;
+    font-size: 20px;
   }
   .content_wrap {
     height: fit-content;
@@ -2220,7 +2204,6 @@
     height: 280px;
     background-color: #332f2d;
     display: block;
-    margin-top: 100px;
   }
 
   /* 네번째 섹션 - 제목 */
@@ -2235,12 +2218,12 @@
   }
 
   .only_txt p:first-child {
-    font-size: 8px;
+    font-size: 12px;
     margin-bottom: 3px;
   }
 
   .only_txt p:nth-child(2) {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   /* 네번째 섹션 - 공연 이미지박스*/
@@ -2314,11 +2297,11 @@
     margin: auto 0;
   }
   .service_txt p:first-child {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .service_txt p:nth-child(2) {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .sec5_icon_wrap {
