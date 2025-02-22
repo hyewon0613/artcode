@@ -442,7 +442,7 @@
   .sub4_sec1_text_top h2 {
     width: fit-content;
     font-size: clamp(26px, 5vw, 38px);
-    margin-bottom: 36px;
+    margin-bottom: 22px;
   }
   .sub4_sec1_text_top p:nth-of-type(1) {
     font-size: clamp(12px, 3.4vw, 20px);
@@ -454,8 +454,7 @@
   }
   .sub4_sec1_text_bottom {
     gap: 28px;
-
-    margin-top: 42px;
+    margin-top: 45px;
   }
 
   .sub4_sec1_text_bottom div p:first-child {
