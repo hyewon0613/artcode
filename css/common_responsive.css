@@ -30,8 +30,14 @@
   }
 }
 /* ================================================================= 
-          작은 노트북 ----------------------------------------------------- */
+    작은 노트북 ----------------------------------------------------- */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* 플로팅 버튼 */
+  .floating_btn {
+    width: 50px;
+    height: 50px;
+  }
+
   /* 헤더 */
   .con {
     width: 95%;
@@ -69,8 +75,13 @@
   }
 }
 /* ================================================================= 
-          테블릿 ----------------------------------------------------- */
+    테블릿 ----------------------------------------------------- */
 @media screen and (min-width: 481px) and (max-width: 768px) {
+  /* 플로팅 버튼 */
+  .floating_btn {
+    width: 40px;
+    height: 40px;
+  }
   /* 헤더 */
   header {
     height: 80px;
@@ -126,11 +137,14 @@
     top: 80px;
     transform: translateX(200%);
     transition: right 0.3s ease;
-    padding: 20px 0;
+    /* padding: 20px 0; */
     transition: 0.5s;
   }
   .all_menu.open {
     transform: translateX(0);
+  }
+  .icons div:hover {
+    transform: scale(1);
   }
 
   /*푸터 */
@@ -170,8 +184,13 @@
   }
 }
 /* ================================================================= 
-          모바일 ----------------------------------------------------- */
+    모바일 ----------------------------------------------------- */
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  /* 플로팅 버튼 */
+  .floating_btn {
+    width: 40px;
+    height: 40px;
+  }
   /* 헤더 */
   header {
     height: 80px;
@@ -228,11 +247,23 @@
     top: 80px;
     transform: translateX(200%);
     transition: right 0.3s ease;
-    padding: 20px 0;
+    /* padding: 20px 0; */
     transition: 0.5s;
   }
+
+  .all_menu a {
+    font-size: 16px;
+    padding: 15px 10px;
+    font-weight: 400;
+    background-color: #fff;
+  }
+
   .all_menu.open {
     transform: translateX(0);
+  }
+
+  .icons div:hover {
+    transform: scale(1);
   }
   .icons {
     gap: 20px;

@@ -303,7 +303,7 @@ body {
   align-items: center;
   gap: 40px;
   margin-top: 130px;
-  animation: slideleft 14s linear infinite;
+  animation: slideleft 18s linear infinite;
 }
 
 @keyframes slideleft {
@@ -321,7 +321,7 @@ body {
   align-items: center;
   gap: 40px;
   margin-top: 70px;
-  animation: slideright 14s linear infinite;
+  animation: slideright 16s linear infinite;
 }
 @keyframes slideright {
   0% {
