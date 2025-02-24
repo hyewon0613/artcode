@@ -2202,6 +2202,7 @@
     height: 280px;
     background-color: #332f2d;
     display: block;
+    margin-top: 150px;
   }
 
   /* 네번째 섹션 - 제목 */
@@ -2279,10 +2280,12 @@
    다섯번째 섹션 */
   .main_sec5 {
     padding-bottom: 50px;
+    margin-bottom: 150px;
   }
   .sec5_con {
     padding: 0 20px;
     width: 87%;
+    height: auto;
   }
 
   .sec5_top {
@@ -2307,6 +2310,7 @@
     width: 100%;
     padding-left: 12px;
     justify-content: space-around;
+    margin-top: 30px;
   }
 
   .icon_box div img {

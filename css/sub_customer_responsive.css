@@ -436,11 +436,11 @@
     width: 100%;
   }
   .customer_content_wrap {
-    width: 95%;
     gap: 30px;
     flex-wrap: wrap;
     margin: 0 auto;
     justify-content: center;
+    width: 90%;
   }
   .customer_content > h2 {
     width: fit-content;
@@ -455,7 +455,7 @@
   }
   .customer_wrap p {
     font-size: 15px;
-    margin-right: 24px;
+    margin-right: 8px;
   }
 
   /* 네번쨰 섹션--------------------------------------------------- */

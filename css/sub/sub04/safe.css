@@ -295,6 +295,10 @@ body {
   font-weight: 300;
 }
 
+.sub4_sec3_wrap2 {
+  cursor: pointer;
+}
+
 /* 세번째 섹션 - 슬라이드 박스 - 위 / 중간 / 아래 */
 .sub4_sec3_topbox {
   width: 100%;
@@ -359,7 +363,7 @@ body {
   border-radius: 20px;
 }
 
-/* 프로필 일러스트 */
+/* 프로필 이미지 */
 .topbox_num1 div:nth-child(1) {
   margin-left: 10px;
   width: 87px;

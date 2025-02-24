@@ -1027,6 +1027,7 @@ main {
   gap: 20px;
   border-radius: 20px;
   animation: slideonly 12s linear infinite forwards;
+  cursor: pointer;
 }
 
 /* 슬라이드 효과 */
@@ -1037,6 +1038,9 @@ main {
   100% {
     transform: translateX(0);
   }
+}
+.sec4_img_wrap:hover > .slider_only {
+  animation-play-state: paused;
 }
 
 /* 슬라이드 5개 이미지액자 크기  */
