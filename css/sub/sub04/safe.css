@@ -199,7 +199,6 @@ body {
   height: fit-content;
   display: flex;
   overflow: hidden;
-  gap: 40px;
   justify-content: center;
   cursor: pointer;
 }
