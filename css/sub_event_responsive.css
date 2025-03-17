@@ -1,6 +1,47 @@
 @charset "utf-8";
 @import url("./common_responsive.css");
+/* ================================================================= 
+    pc ----------------------------------------------------- */
+@media screen and (min-width: 1441px) {
+  .sub3_sec1_con {
+    width: 94%;
+    margin: 0 auto;
+  }
 
+  .swiper_my .swiper-slide > div:first-child {
+    width: 100%;
+    height: 30vw;
+    margin-bottom: 20px;
+  }
+  .swiper_my .sec1_card_content {
+    width: 100%;
+  }
+  .swiper-slide {
+    width: 300px;
+  }
+  /* 두번째 섹션------------------------- */
+  .sec2_card > div:first-child {
+    width: clamp(250px, 25vw, 300px);
+    height: clamp(300px, 34vw, 430px);
+    margin-bottom: 20px;
+  }
+
+  .sec2_card .sec2_card_content > p:nth-child(1) {
+    font-size: clamp(18px, 2vw, 20px);
+  }
+
+  .sec2_card .sec2_card_content > p:nth-child(2) {
+    font-size: clamp(18px, 2vw, 20px);
+  }
+
+  .sub3_sec2_bottom {
+    height: auto;
+  }
+  /* 세번째 섹션------------------------- */
+  .sub3_sec3_bottom {
+    height: auto;
+  }
+}
 /* ================================================================= 
     큰 노트북 ----------------------------------------------------- */
 @media screen and (min-width: 1025px) and (max-width: 1440px) {

@@ -93,14 +93,14 @@
 /* 두번째 섹션 */
 .sub1_sec2_con {
   width: 100%;
-  height: 670px;
+  height: 680px;
   background-color: #332f2d;
   margin-top: 250px;
 }
 
 .sec2_box_wrap {
-  width: 1500px;
-  height: fit-content;
+  width: 80%;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -119,7 +119,6 @@
 .number_left {
   width: fit-content;
   height: fit-content;
-  margin-top: 40px;
 }
 /* 연간 거래액 박스 */
 .number_left > .number1 {
@@ -137,18 +136,6 @@
   font-size: 30px;
   font-weight: 600;
 }
-
-/* 
-.number_left > .number1 p:first-child::before {
-  width: 10px;
-  height: 10px;
-  border-radius: 30px;
-  background-color: #332f2d;
-  display: inline-block;
-  content: "";
-  margin-bottom: 5px;
-}
-*/
 
 .number_left > .number1 p:nth-child(2) {
   font-size: 28px;
@@ -187,7 +174,6 @@
   align-items: center;
   border-radius: 20px;
   gap: 50px;
-  margin-bottom: 100px;
 }
 
 .number_left > .number3 p:first-child {
@@ -447,7 +433,8 @@
   width: 100%;
   height: fit-content;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 40px;
 }
 
 .service_bottom .service_box {

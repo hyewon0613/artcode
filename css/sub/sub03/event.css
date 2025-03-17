@@ -18,7 +18,7 @@
 
 /* 첫번째 섹션 */
 .sub3_sec1 {
-  padding: 200px 0;
+  padding: 200px 0 100px;
   width: 100%;
   height: fit-content;
 }
@@ -42,46 +42,6 @@
   font-weight: 600;
   text-align: center;
   margin-bottom: 40px;
-}
-
-/* 24th 타임세일 메뉴 */
-#sub3_sec1_all_menu {
-  width: fit-content;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  background-color: #f3f3f3;
-  border-radius: 20px;
-  padding: 0 20px;
-}
-
-#sub3_sec1_all_menu > ul {
-  width: fit-content;
-  height: fit-content;
-  display: flex;
-  gap: 60px;
-  align-items: center;
-}
-
-#sub3_sec1_all_menu > ul > li {
-  width: 110px;
-  height: 100%;
-}
-
-#sub3_sec1_all_menu > ul > li > a {
-  width: 100%;
-  height: fit-content;
-  font-size: 20px;
-  font-weight: 500;
-  display: block;
-  box-sizing: border-box;
-  text-align: center;
-  transition: 0.3s;
-  line-height: 50px;
-}
-
-#sub3_sec1_all_menu > ul > li:hover > a {
-  transform: translateY(-4px);
 }
 
 /* 24th 타임세일 - 이미지영역 */
