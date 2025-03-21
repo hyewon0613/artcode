@@ -178,13 +178,16 @@
 .customer_wrap1_box1_left > .plus_wrap > div > img {
   color: var(--main-color);
   height: 29px;
+  transition: 0.3s;
 }
+
+.customer_wrap1_box1_left > .plus_wrap:hover > div > img {
+  transform: translateX(4px);
+}
+
 /* 고객센터 첫번째 섹션 오른쪽 사진 */
 .customer_wrap1_box1_right {
   width: 100px;
-}
-.customer_wrap1_box1_right:hover {
-  cursor: pointer;
 }
 
 .customer_wrap1_box1_right > div {
@@ -271,6 +274,14 @@
   display: flex;
 }
 
+.customer_wrap > div > img {
+  transition: 0.3s;
+}
+
+.customer_wrap:hover > div > img {
+  transform: translateX(4px);
+}
+
 /* 티켓 안내 */
 .customer_wrap2 {
   width: 85%;
@@ -306,6 +317,41 @@
 
 .wrap2_box1_right img {
   cursor: pointer;
+}
+
+/* 화살표 클릭했을 때 나오는 글자박스 */
+.content {
+  width: 97%;
+  height: fit-content;
+  display: none;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 60px;
+  padding: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+/* 화살표 클릭했을 때 나오는 글자 */
+.content p {
+  margin-bottom: 20px;
+  line-height: 20px;
+  padding-left: 20px;
+}
+.content p:last-child {
+  margin-bottom: 0;
+}
+.content .sub_title {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.content span {
+  color: red;
+}
+/* 클릭하면 글자색이 바뀜 */
+.ticket-title.active {
+  color: #ffbf00;
 }
 
 /* 이용안내 */
