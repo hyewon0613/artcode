@@ -765,7 +765,7 @@
     margin-right: auto;
     margin-bottom: 80px;
   }
-  .m.tosell_txt p:first-child {
+  .tosell_txt p:first-child {
     font-size: 14px;
   }
   .tosell_txt p:nth-child(2) {
@@ -870,11 +870,11 @@
   }
 
   .ai_title_box {
-    width: 100%;
+    width: 92%;
   }
   .ai_content_box {
     margin: 35px 3px;
-    width: 100%;
+    width: 92%;
     gap: 12px;
   }
   .ai_chatbot {
@@ -885,11 +885,12 @@
   }
 
   .qna_title_box {
-    width: 100%;
+    width: 92%;
   }
 
   .qna_content_box {
-    width: 94%;
+    width: 90%;
+    margin: 0 auto;
     padding: 28px 16px;
   }
   /* ----------------------------------------------------------- */
@@ -1531,12 +1532,12 @@
   }
 
   .icon_box div img {
-    width: 50%;
+    width: 80%;
     margin-right: 2px;
   }
 
   .icon_box p {
-    font-size: 10px;
+    font-size: 14px;
     text-align: start;
   }
 
@@ -1559,14 +1560,13 @@
   }
 
   .sec5_bottom_left {
-    padding: 0px 10px;
+    padding: 15px 10px;
     width: 100%;
     height: auto;
   }
 
   .ai_title_box {
     width: 94%;
-
     height: 52px;
   }
   .ai_content_box {
@@ -1582,22 +1582,22 @@
     width: 23%;
   }
   .sec5_bottom_right {
-    padding: 0px 10px;
+    padding: 15px 10px;
     width: 100%;
     height: auto;
   }
 
   .qna_title_box {
-    width: 94%;
-
+    width: 92%;
     height: 52px;
   }
   .qna_title_box p {
     font-size: 18px;
   }
   .qna_content_box {
-    width: 100%;
-    padding: 0 14px;
+    width: 92%;
+    margin: 0 auto;
+    padding: 0;
   }
   .qna_content_box > div {
     display: flex;
@@ -1605,7 +1605,7 @@
     justify-content: space-between;
     line-height: 65px;
     font-size: 14px;
-    width: 92%;
+    width: 100%;
   }
 
   /* ====================================================================
