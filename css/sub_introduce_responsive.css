@@ -23,7 +23,8 @@
 
   /* 세번째 섹션--------------------------------------------------- */
   .history_left p {
-    font-size: clamp(28px, 3vw, 38px);
+    font-size: 2.5vw;
+    line-height: 40px;
   }
   .history1 {
     margin-bottom: 30px;
@@ -35,14 +36,25 @@
     margin-bottom: 30px;
   }
   .history1 > p {
-    font-size: clamp(28px, 3vw, 38px);
+    font-size: 2.7vw;
   }
   .history2 > p {
-    font-size: clamp(28px, 3vw, 38px);
+    font-size: 2.7vw;
   }
   .history3 > p {
-    font-size: clamp(28px, 3vw, 38px);
+    font-size: 2.7vw;
   }
+
+  .history1_wrap_left p {
+    font-size: 2.2vw;
+  }
+  .history2_wrap_left p {
+    font-size: 2.2vw;
+  }
+  .history3_wrap_left p {
+    font-size: 2.2vw;
+  }
+
   .history1_wrap_right p {
     font-size: clamp(20px, 1.8vw, 26px);
   }
@@ -79,8 +91,7 @@
   }
   /* 두번째 섹션--------------------------------------------------- */
   .sec2_box_wrap {
-    width: 95%;
-    padding: 0 20px;
+    width: 90%;
   }
   .sub1_sec2_con {
     width: 100%;
@@ -96,13 +107,16 @@
     padding: 40px 0px;
   }
   .number_left > .number1 {
-    padding: 25px 20px;
+    padding: 24px 32px;
+    gap: 20px;
   }
   .number_left > .number2 {
-    padding: 25px 20px;
+    padding: 24px 32px;
+    gap: 20px;
   }
   .number_left > .number3 {
-    padding: 25px 20px;
+    padding: 24px 32px;
+    gap: 20px;
   }
 
   .number_right div {
@@ -116,29 +130,30 @@
     margin-top: 5px;
   }
   .number_left > .number1 p:first-child {
-    font-size: clamp(20px, 3vw, 28px);
+    font-size: 2.8vw;
   }
   .number_left > .number1 p:nth-child(2) {
-    font-size: clamp(20px, 3vw, 24px);
+    font-size: 2.4vw;
     line-height: 40px;
   }
   .number_left > .number2 p:first-child {
-    font-size: clamp(20px, 3vw, 28px);
+    font-size: 2.8vw;
   }
   .number_left > .number2 p:nth-child(2) {
-    font-size: clamp(20px, 3vw, 24px);
+    font-size: 2.4vw;
     line-height: 40px;
   }
   .number_left > .number3 p:first-child {
-    font-size: clamp(20px, 3vw, 28px);
+    font-size: 2.8vw;
   }
   .number_left > .number3 p:nth-child(2) {
-    font-size: clamp(20px, 3vw, 24px);
+    font-size: 2.4vw;
     line-height: 40px;
   }
   /* 세번째 섹션--------------------------------------------------- */
   .sub1_sec3_con {
     height: 1000px;
+    width: 83vw;
     margin-bottom: 200px;
   }
   .history {
@@ -146,12 +161,12 @@
   }
   /* 아트코드는 다양한 서비스로~~  */
   .history_left p {
-    font-size: clamp(24px, 3vw, 38px);
-    line-height: 40px;
+    font-size: 2.6vw;
+    line-height: 36px;
   }
 
   .history_left {
-    width: 40%;
+    width: 54%;
   }
   .history_right {
     width: 54%;
@@ -160,7 +175,7 @@
     flex-direction: column;
     margin-top: 100px;
     justify-content: flex-start;
-    align-items: center;
+    align-items: start;
   }
 
   /* 오른쪽 2024년---------------------------- */
@@ -292,21 +307,25 @@
   }
 
   .number_left {
-    width: 70%;
+    width: 60%;
     height: 470px;
   }
   .number_left > .number1 {
-    padding: 25px 20px;
+    gap: 20px;
+    padding: 24px 40px;
   }
   .number_left > .number2 {
-    padding: 25px 20px;
+    gap: 20px;
+    padding: 24px 40px;
   }
   .number_left > .number3 {
-    padding: 25px 20px;
+    gap: 20px;
+    padding: 24px 40px;
   }
   .number_right {
     line-height: clamp(20px, 4vw, 32px);
     text-align: center;
+    margin-bottom: 20px;
   }
   .number_right div {
     font-size: clamp(22px, 4vw, 33px);
@@ -315,7 +334,7 @@
   }
   .number_right > p:nth-of-type(1) {
     font-size: clamp(22px, 4vw, 28px);
-    margin-bottom: 24px;
+    margin-bottom: 15px;
   }
   .number_right > p:nth-of-type(2) {
     font-size: clamp(16px, 1.8vw, 25px);
@@ -598,7 +617,7 @@
     font-size: clamp(24px, 2vw, 20px);
   }
   .service_bottom {
-    gap: 20px;
+    gap: 30px;
     justify-content: center;
     align-items: center;
     flex-direction: column;

@@ -241,7 +241,7 @@
 }
 
 .sub1_sec3_con {
-  width: 80%;
+  width: 80vw;
   height: 1500px;
   margin: 0 auto;
   display: flex;
@@ -279,7 +279,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
 }
 
 /* 2024년 */
@@ -306,13 +306,13 @@
 
 .history1_wrap {
   display: flex;
-  gap: 40px;
+  gap: 2.8vw;
 }
 
 .history1_wrap_left {
   text-align: end;
   color: #858585;
-  margin-left: 75px;
+  margin-left: 60px;
 }
 
 .history1_wrap_left p {
@@ -348,13 +348,13 @@
 
 .history2_wrap {
   display: flex;
-  gap: 40px;
+  gap: 2.8vw;
 }
 
 .history2_wrap_left {
   text-align: end;
   color: #858585;
-  margin-left: 75px;
+  margin-left: 60px;
 }
 
 .history2_wrap_left p {
@@ -387,13 +387,13 @@
 
 .history3_wrap {
   display: flex;
-  gap: 40px;
+  gap: 2.8vw;
 }
 
 .history3_wrap_left {
   text-align: end;
   color: #858585;
-  margin-left: 75px;
+  margin-left: 60px;
 }
 
 .history3_wrap_left p {
