@@ -161,7 +161,7 @@
   }
   /* 아트코드는 다양한 서비스로~~  */
   .history_left p {
-    font-size: 2.6vw;
+    font-size: 2.8vw;
     line-height: 36px;
   }
 
@@ -169,7 +169,7 @@
     width: 54%;
   }
   .history_right {
-    width: 54%;
+    width: 63%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -199,7 +199,7 @@
     margin-left: 11px;
   }
   .history1_wrap_right p {
-    font-size: clamp(20px, 1.8vw, 26px);
+    font-size: 2.4vw;
   }
   /* 오른쪽 2023년--------------------------- */
   .history2 {
@@ -221,7 +221,7 @@
     margin-left: 11px;
   }
   .history2_wrap_right p {
-    font-size: clamp(20px, 1.8vw, 26px);
+    font-size: 2.4vw;
   }
   /* 오른쪽 2022년------------------------- */
   .history3 {
@@ -243,7 +243,7 @@
     margin-left: 11px;
   }
   .history3_wrap_right p {
-    font-size: clamp(20px, 1.8vw, 26px);
+    font-size: 2.4vw;
   }
 
   /* 네번째 섹션--------------------------------------------------- */
@@ -393,6 +393,7 @@
   /* 오른쪽 2024년---------------------------- */
 
   .history1 {
+    width: 400px;
     margin-bottom: 10px;
     margin-bottom: clamp(20px, 4vw, 40px);
   }
@@ -415,6 +416,7 @@
   }
   /* 오른쪽 2023년--------------------------- */
   .history2 {
+    width: 400px;
     margin-bottom: 10px;
     margin-bottom: clamp(20px, 4vw, 40px);
   }
@@ -437,6 +439,7 @@
   }
   /* 오른쪽 2022년------------------------- */
   .history3 {
+    width: 400px;
     margin-bottom: 10px;
     margin-bottom: clamp(20px, 4vw, 40px);
   }
@@ -465,6 +468,14 @@
   .sub1_sec4_con {
     width: 95%;
   }
+
+  .service_top {
+    margin-bottom: 50px;
+  }
+
+  .service_top p {
+    font-size: 30px;
+  }
   .service_bottom {
     gap: 20px;
     justify-content: center;
@@ -472,7 +483,8 @@
     flex-direction: column;
   }
   .service_bottom .service_box {
-    width: 300px;
+    width: 48vw;
+    padding: 20px 0;
     height: 200px;
   }
   .service_box p:nth-of-type(1) {
